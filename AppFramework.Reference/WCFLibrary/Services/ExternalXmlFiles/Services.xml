@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuredServices>
+  <service type="ServiceImplementation.ArticleService, ServiceImplementation" />
+</configuredServices>

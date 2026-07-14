@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B0AE85C-4142-42DC-B97E-5D5E9557A9E6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppFramework.Core</RootNamespace>
+    <AssemblyName>AppFramework.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>AppFrameworkCore.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientConfig\ConfigBase\ConfigOperation.cs" />
+    <Compile Include="ClientConfig\ConfigBase\CustomConfigure.cs" />
+    <Compile Include="ClientConfig\ConfigBase\SysConfigConstant.cs" />
+    <Compile Include="ClientConfig\CurrentConfig.cs" />
+    <Compile Include="ClientConfig\ServerAddressConfig\ServerAddressConfig.cs" />
+    <Compile Include="ClientConfig\ServerAddressConfig\ServerAddressConfigHelper.cs" />
+    <Compile Include="ClientConfig\ServerAddressConfig\ServerAddressConfigParentNode.cs" />
+    <Compile Include="ClientConfig\UserInfoConfig\UserInfoConfig.cs" />
+    <Compile Include="ClientConfig\UserInfoConfig\UserInfoConfigHelper.cs" />
+    <Compile Include="ClientConfig\UserInfoConfig\UserInfoConfigParentNode.cs" />
+    <Compile Include="ClientConfig\UserInfoConfig\UserLogonStateConvert.cs" />
+    <Compile Include="CommonClass\AccessResult.cs" />
+    <Compile Include="CommonClass\BasedDataFieldInfo.cs" />
+    <Compile Include="CommonClass\BindingArrayList.cs" />
+    <Compile Include="CommonClass\CellDataValidationResult.cs" />
+    <Compile Include="CommonClass\InstanceItem.cs" />
+    <Compile Include="CommonClass\InstanceSet.cs" />
+    <Compile Include="CommonClass\RecordItem.cs" />
+    <Compile Include="CommonClass\PointSize.cs" />
+    <Compile Include="CommonClass\TextIntValue.cs" />
+    <Compile Include="CommonClass\StringPairValue.cs" />
+    <Compile Include="CommonClass\ThreadResult.cs" />
+    <Compile Include="CommonClass\WebSubMenu.cs" />
+    <Compile Include="CommonClass\WebMenu.cs" />
+    <Compile Include="CommonClass\RemoteServer.cs" />
+    <Compile Include="CommonClass\CellValidationResult.cs" />
+    <Compile Include="CommonClass\CommonDataFieldValue.cs" />
+    <Compile Include="CommonClass\CustomMargin.cs" />
+    <Compile Include="CommonClass\CellConditionItem.cs" />
+    <Compile Include="CommonClass\DataRowItem.cs" />
+    <Compile Include="CommonClass\RecordKeyInfo.cs" />
+    <Compile Include="CommonClass\DataValidationList.cs" />
+    <Compile Include="CommonClass\DataValidationResult.cs" />
+    <Compile Include="CommonClass\CellValidationResults.cs" />
+    <Compile Include="CommonClass\CommonDataFieldInfo.cs" />
+    <Compile Include="CommonClass\CommonItemList.cs" />
+    <Compile Include="CommonClass\CommonUserInfo.cs" />
+    <Compile Include="CommonClass\DefaultItem.cs" />
+    <Compile Include="CommonClass\BooleanItem.cs" />
+    <Compile Include="CommonClass\EnumSelectedItem.cs" />
+    <Compile Include="CommonClass\ExtendedCommonNode.cs" />
+    <Compile Include="CommonClass\CommonDataField.cs" />
+    <Compile Include="CommonClass\CommonNode.cs" />
+    <Compile Include="CommonClass\CorrelatedModel.cs" />
+    <Compile Include="CommonClass\CommonItem.cs" />
+    <Compile Include="CommonClass\EnumItem.cs" />
+    <Compile Include="CommonClass\KeyValueInfo.cs" />
+    <Compile Include="CommonClass\QueryBuilder.cs" />
+    <Compile Include="CommonClass\QueryField.cs" />
+    <Compile Include="CommonClass\QueryFieldCollection.cs" />
+    <Compile Include="CommonClass\RecordSet.cs" />
+    <Compile Include="CommonClass\RoleAuthority.cs" />
+    <Compile Include="CommonClass\RecordEntity.cs" />
+    <Compile Include="CommonClass\RegisteredInfo.cs" />
+    <Compile Include="CommonClass\PairValues.cs" />
+    <Compile Include="CommonClass\RowAndCol.cs" />
+    <Compile Include="CommonClass\SortingCondtion.cs" />
+    <Compile Include="CommonClass\SystemMessage.cs" />
+    <Compile Include="CommonClass\TableLink.cs" />
+    <Compile Include="CommonClass\ExtendedUpLoadFileInfo.cs" />
+    <Compile Include="CommonClass\UpLoadFileInfo.cs" />
+    <Compile Include="CommonClass\WhereConditon.cs" />
+    <Compile Include="CommonEnum\CustomDataSource.cs" />
+    <Compile Include="CommonEnum\DataInputMode.cs" />
+    <Compile Include="CommonEnum\BussinessMenu.cs" />
+    <Compile Include="CommonEnum\PrintingType.cs" />
+    <Compile Include="CommonEnum\RecommendType.cs" />
+    <Compile Include="CommonEnum\QueryShowType.cs" />
+    <Compile Include="CommonEnum\RowColCopyType.cs" />
+    <Compile Include="CommonEnum\BackupDataRange.cs" />
+    <Compile Include="CommonEnum\BackupPeriod.cs" />
+    <Compile Include="CommonEnum\SystemTable.cs" />
+    <Compile Include="CommonEnum\DataFieldPrintType.cs" />
+    <Compile Include="CommonEnum\TableProperty.cs" />
+    <Compile Include="CommonEnum\VerificationCategory.cs" />
+    <Compile Include="CommonEnum\AuthorityMethod.cs" />
+    <Compile Include="CommonEnum\ImportedKeyName.cs" />
+    <Compile Include="CommonEnum\Aggregate.cs" />
+    <Compile Include="CommonEnum\AppointmentBussinesType.cs" />
+    <Compile Include="CommonEnum\ErrorDataFormat.cs" />
+    <Compile Include="CommonEnum\DataBusinessType.cs" />
+    <Compile Include="CommonEnum\DataQueryingType.cs" />
+    <Compile Include="CommonEnum\DataFilledBusinessType.cs" />
+    <Compile Include="CommonEnum\ExportStyle.cs" />
+    <Compile Include="CommonEnum\RemoteProperty.cs" />
+    <Compile Include="CommonEnum\DataSourceType.cs" />
+    <Compile Include="CommonEnum\DataRelationProperty.cs" />
+    <Compile Include="CommonEnum\DataRelationType.cs" />
+    <Compile Include="CommonEnum\InfoStatus.cs" />
+    <Compile Include="CommonEnum\AuditingLogType.cs" />
+    <Compile Include="CommonEnum\AuditingStatus.cs" />
+    <Compile Include="CommonEnum\DataAuditingProperty.cs" />
+    <Compile Include="CommonEnum\DataAuditingProcess.cs" />
+    <Compile Include="CommonEnum\AssociatedBussinessType.cs" />
+    <Compile Include="CommonEnum\AdditionalRecordType.cs" />
+    <Compile Include="CommonEnum\BasicCellType.cs" />
+    <Compile Include="CommonEnum\BusinessMenu.cs" />
+    <Compile Include="CommonEnum\BusinessType.cs" />
+    <Compile Include="CommonEnum\CellCondition.cs" />
+    <Compile Include="CommonEnum\CellRowAndCol.cs" />
+    <Compile Include="CommonEnum\CellSelectionStyle.cs" />
+    <Compile Include="CommonEnum\DataFieldShowProperty.cs" />
+    <Compile Include="CommonEnum\AuditingAction.cs" />
+    <Compile Include="CommonEnum\StatisticCellType.cs" />
+    <Compile Include="CommonEnum\DataAuditingType.cs" />
+    <Compile Include="CommonEnum\DataFieldEditedState.cs" />
+    <Compile Include="CommonEnum\ExportedMode.cs" />
+    <Compile Include="CommonEnum\FindReplaceType.cs" />
+    <Compile Include="CommonEnum\FindType.cs" />
+    <Compile Include="CommonEnum\InputReportType.cs" />
+    <Compile Include="CommonEnum\MenuSubAuthority.cs" />
+    <Compile Include="CommonEnum\ReportCategory.cs" />
+    <Compile Include="CommonEnum\InputCellType.cs" />
+    <Compile Include="CommonEnum\StructCategory.cs" />
+    <Compile Include="CommonEnum\MenuAuthority.cs" />
+    <Compile Include="CommonEnum\SystemMenuAuthority.cs" />
+    <Compile Include="CommonEnum\SystemMenuCategory.cs" />
+    <Compile Include="CommonEnum\DataAuthorityType.cs" />
+    <Compile Include="CommonEnum\SystemFormType.cs" />
+    <Compile Include="CommonEnum\TableCategroy.cs" />
+    <Compile Include="CommonEnum\ThreeState.cs" />
+    <Compile Include="CommonEnum\WorkflowBusinessType.cs" />
+    <Compile Include="CommonEnum\PeriodType.cs" />
+    <Compile Include="CommonEnum\AppointmentType.cs" />
+    <Compile Include="CommonEnum\CellDataType.cs" />
+    <Compile Include="CommonEnum\DataQueriedType.cs" />
+    <Compile Include="CommonEnum\DataExchangeMode.cs" />
+    <Compile Include="CommonEnum\DataTableCheckedMode.cs" />
+    <Compile Include="CommonEnum\ConditionType.cs" />
+    <Compile Include="CommonEnum\ImportedMode.cs" />
+    <Compile Include="CommonEnum\LogTitle.cs" />
+    <Compile Include="CommonEnum\LogAction.cs" />
+    <Compile Include="CommonEnum\LogLevel.cs" />
+    <Compile Include="CommonEnum\SystemConfigKeyName.cs" />
+    <Compile Include="CommonEnum\ClientUserSetting.cs" />
+    <Compile Include="CommonEnum\DataImportedError.cs" />
+    <Compile Include="CommonEnum\NextTableRelation.cs" />
+    <Compile Include="CommonEnum\UserToolError.cs" />
+    <Compile Include="CommonEnum\UserToolAction.cs" />
+    <Compile Include="CommonEnum\ViewProperty.cs" />
+    <Compile Include="CommonEnum\WithdrawedResult.cs" />
+    <Compile Include="CommonEnum\AttachmentCategory.cs" />
+    <Compile Include="CommonEnum\CommonNodeProperty.cs" />
+    <Compile Include="CommonEnum\AbortedResult.cs" />
+    <Compile Include="CommonEnum\NodeRelationship.cs" />
+    <Compile Include="CommonEnum\InstanceStatus.cs" />
+    <Compile Include="CommonEnum\MatchingMode.cs" />
+    <Compile Include="CommonEnum\CurrentState.cs" />
+    <Compile Include="CommonEnum\AuditedStatus.cs" />
+    <Compile Include="CommonEnum\ActionVisible.cs" />
+    <Compile Include="CommonEnum\ReviewedStatus.cs" />
+    <Compile Include="CommonEnum\ReviewedAction.cs" />
+    <Compile Include="CommonEnum\UserScopeProperty.cs" />
+    <Compile Include="CommonEnum\DataFieldSetting.cs" />
+    <Compile Include="CommonEnum\DataFilledProperty.cs" />
+    <Compile Include="CommonEnum\DataFilledState.cs" />
+    <Compile Include="CommonEnum\DataFilledOperation.cs" />
+    <Compile Include="CommonEnum\InstanceState.cs" />
+    <Compile Include="CommonEnum\DataSumbittedState.cs" />
+    <Compile Include="CommonEnum\ReviewedMode.cs" />
+    <Compile Include="CommonEnum\DataShowMode.cs" />
+    <Compile Include="CommonEnum\IconCollection.cs" />
+    <Compile Include="CommonEnum\AdditionalPhysicalDataField.cs" />
+    <Compile Include="CommonEnum\TableSetting.cs" />
+    <Compile Include="CommonEnum\MenuNodeType.cs" />
+    <Compile Include="CommonEnum\TableFilter.cs" />
+    <Compile Include="CommonEnum\DataFieldRange.cs" />
+    <Compile Include="CommonEnum\MenuType.cs" />
+    <Compile Include="CommonEnum\CustomBusiness.cs" />
+    <Compile Include="CommonEnum\QueryReportType.cs" />
+    <Compile Include="CommonEnum\RoleProperty.cs" />
+    <Compile Include="CommonEnum\IconType.cs" />
+    <Compile Include="CommonEnum\FormProperty.cs" />
+    <Compile Include="CommonEnum\WorkflowHandlerMode.cs" />
+    <Compile Include="CommonEnum\WorkflowProcessSetting.cs" />
+    <Compile Include="CommonEnum\WorkflowProcessCategory.cs" />
+    <Compile Include="CommonEnum\WorkflowRoleType.cs" />
+    <Compile Include="CommonEnum\WorkflowInstanceNameRule.cs" />
+    <Compile Include="CommonEnum\WorkflowProcessType.cs" />
+    <Compile Include="CommonEnum\WorkflowHandlerType.cs" />
+    <Compile Include="CommonEnum\DataFilledType.cs" />
+    <Compile Include="CommonEnum\WorkflowType.cs" />
+    <Compile Include="CommonEnum\WorkflowProperty.cs" />
+    <Compile Include="CommonEnum\WorkflowNodeType.cs" />
+    <Compile Include="CommonEnum\DataFillNodeType.cs" />
+    <Compile Include="CommonEnum\AssociationShowMode.cs" />
+    <Compile Include="CommonEnum\GroupType.cs" />
+    <Compile Include="CommonEnum\AttachmentType.cs" />
+    <Compile Include="CommonEnum\CommonShowMode.cs" />
+    <Compile Include="CommonEnum\DataFieldMode.cs" />
+    <Compile Include="CommonEnum\AssociatedDataFieldCategory.cs" />
+    <Compile Include="CommonEnum\DataFieldShowMode.cs" />
+    <Compile Include="CommonEnum\FormShowStyle.cs" />
+    <Compile Include="CommonEnum\FormType.cs" />
+    <Compile Include="CommonEnum\QueriedDataRange.cs" />
+    <Compile Include="CommonEnum\QueriedShowMode.cs" />
+    <Compile Include="CommonEnum\GroupCondition.cs" />
+    <Compile Include="CommonEnum\SystemCondition.cs" />
+    <Compile Include="CommonEnum\MailBoxType.cs" />
+    <Compile Include="CommonEnum\MailDeliveryMode.cs" />
+    <Compile Include="CommonEnum\MailState.cs" />
+    <Compile Include="CommonEnum\MailPriority.cs" />
+    <Compile Include="CommonEnum\SoftwarePlatform.cs" />
+    <Compile Include="CommonEnum\SQLServerFunction.cs" />
+    <Compile Include="CommonEnum\SystemPhysicalDataField.cs" />
+    <Compile Include="CommonEnum\DataRelation.cs" />
+    <Compile Include="CommonEnum\TableRelation.cs" />
+    <Compile Include="CommonEnum\ValidationMode.cs" />
+    <Compile Include="CommonEnum\WindowsServiceStep.cs" />
+    <Compile Include="CommonClass\FormShowStyleSetting.cs" />
+    <Compile Include="SharedDelegate.cs" />
+    <Compile Include="CommonEnum\AssociationNodeType.cs" />
+    <Compile Include="CommonEnum\AsynResult.cs" />
+    <Compile Include="CommonEnum\CustomBool.cs" />
+    <Compile Include="CommonEnum\BasedDataType.cs" />
+    <Compile Include="CommonEnum\DataRangeBoundaryType.cs" />
+    <Compile Include="CommonEnum\LogicalDataFieldCategory.cs" />
+    <Compile Include="CommonEnum\PhysicalDataFieldCategory.cs" />
+    <Compile Include="CommonEnum\CommonDateTimeFormat.cs" />
+    <Compile Include="CommonEnum\DatabaseNodeType.cs" />
+    <Compile Include="CommonEnum\DataFieldAuthority.cs" />
+    <Compile Include="CommonEnum\DataFieldProperty.cs" />
+    <Compile Include="CommonEnum\LogicalDataFieldType.cs" />
+    <Compile Include="CommonEnum\DataFieldFilter.cs" />
+    <Compile Include="CommonEnum\PhysicalDataFieldProperty.cs" />
+    <Compile Include="CommonEnum\PhysicalDataFieldType.cs" />
+    <Compile Include="CommonEnum\DataTableType.cs" />
+    <Compile Include="CommonEnum\DataWarehouse.cs" />
+    <Compile Include="CommonEnum\MenuItemState.cs" />
+    <Compile Include="CommonEnum\CombinedNodeType.cs" />
+    <Compile Include="CommonEnum\DepartmentProperty.cs" />
+    <Compile Include="CommonEnum\GridViewAuthority.cs" />
+    <Compile Include="CommonEnum\TreeNodeType.cs" />
+    <Compile Include="CommonEnum\SystemDataField.cs" />
+    <Compile Include="CommonEnum\SystemDataFieldPermission.cs" />
+    <Compile Include="CommonEnum\SystemConfigCategory.cs" />
+    <Compile Include="CommonEnum\CustomSorting.cs" />
+    <Compile Include="CommonEnum\DatabaseType.cs" />
+    <Compile Include="CommonEnum\DataFieldBracket.cs" />
+    <Compile Include="CommonEnum\DataFieldCondition.cs" />
+    <Compile Include="CommonEnum\DataFieldInnerRealtion.cs" />
+    <Compile Include="CommonEnum\EditState.cs" />
+    <Compile Include="CommonEnum\IdentificationType.cs" />
+    <Compile Include="CommonEnum\LoginedStep.cs" />
+    <Compile Include="CommonEnum\MessageType.cs" />
+    <Compile Include="CommonEnum\MovedDriection.cs" />
+    <Compile Include="CommonEnum\PlatformState.cs" />
+    <Compile Include="CommonEnum\Priority.cs" />
+    <Compile Include="CommonEnum\SoftwareVersion.cs" />
+    <Compile Include="CommonEnum\TableJoin.cs" />
+    <Compile Include="CommonEnum\UserLogonState.cs" />
+    <Compile Include="CommonEnum\UserProperty.cs" />
+    <Compile Include="CommonClass\KeyValueItem.cs" />
+    <Compile Include="Utility\CommonObjHelper.cs" />
+    <Compile Include="CommonClass\MaxMinValue.cs" />
+    <Compile Include="Utility\CustomFormatter.cs" />
+    <Compile Include="Utility\UserEnumHelper.cs" />
+    <Compile Include="Utility\FileFormatHelper.cs" />
+    <Compile Include="Utility\DataConvertionHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\StringConvertionHelper.cs" />
+    <Compile Include="Utility\UserDataHelper.cs" />
+    <Compile Include="Utility\AuthorityHelper.cs" />
+    <Compile Include="CommonClass\ValidatedResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CommonInterface\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="AppFrameworkCore.snk" />
+    <Content Include="ClientConfig\Client.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

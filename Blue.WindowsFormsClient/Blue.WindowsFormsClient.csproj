@@ -1,0 +1,3396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40A94605-7942-4D99-987A-B3362FDE257E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Blue.WindowsFormsClient</RootNamespace>
+    <AssemblyName>Blue.WindowsFormsClient</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Client.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>WindowsFormsClient.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.BonusSkins.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Data.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Images.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Office.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Pdf.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v16.1.Drawing, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Pdf.v16.1.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Printing.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.RichEdit.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Sparkline.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.SpellChecker.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Utils.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.XtraBars.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.XtraEditors.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.XtraGrid.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.XtraLayout.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.XtraNavBar.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.XtraPrinting.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.XtraRichEdit.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v16.1.Extensions, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.XtraRichEdit.v16.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.XtraSpellChecker.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.XtraTreeList.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.CalcEngine, Version=8.35.20152.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Excel, Version=8.35.20152.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Localization, Version=8.20.20152.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.PDF, Version=8.35.20152.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=8.35.20152.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win, Version=8.35.20152.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win.Chart, Version=8.35.20152.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win.Spread, Version=8.35.20152.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread.Design, Version=8.35.20152.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=8.35.20152.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Enterprise Library 6\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppCodeHelper\Business\ThreadCellItem.cs" />
+    <Compile Include="AppCodeHelper\Business\WorkflowBusinessInfo.cs" />
+    <Compile Include="AppCodeHelper\CustomDelegate\DataFilledModuleDelegate.cs" />
+    <Compile Include="AppCodeHelper\CustomDelegate\LoginModuleDelegate.cs" />
+    <Compile Include="AppCodeHelper\CustomDelegate\CommonModuleDelegate.cs" />
+    <Compile Include="AppCodeHelper\CustomDelegate\WorkflowModuleDelegate.cs" />
+    <Compile Include="AppCodeHelper\CustomDelegate\QueryModuleDelegate.cs" />
+    <Compile Include="AppCodeHelper\CustomDelegate\PersonalBusinessModule.cs" />
+    <Compile Include="AppCodeHelper\CustomDelegate\SystemBusinessModule.cs" />
+    <Compile Include="AppCodeHelper\ProxyFactory\BusinessDesignerChannelFactory.cs" />
+    <Compile Include="AppCodeHelper\ProxyFactory\RemoteChannelFactory.cs" />
+    <Compile Include="AppCodeHelper\ProxyFactory\DataFilledChannelFactory.cs" />
+    <Compile Include="AppCodeHelper\ProxyFactory\DataConvertionChannelFactory.cs" />
+    <Compile Include="AppCodeHelper\UserFileHelper.cs" />
+    <Compile Include="AppCodeHelper\ProxyFactory\GeneralAffairChannelFactory.cs" />
+    <Compile Include="BusinessDesignerModule\DataAuditingModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DataAuditingModule.Designer.cs">
+      <DependentUpon>DataAuditingModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\CellConditionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\CellConditionForm.Designer.cs">
+      <DependentUpon>CellConditionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\CellConditionSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\CellConditionSettingForm.Designer.cs">
+      <DependentUpon>CellConditionSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\CellFormatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\CellFormatForm.Designer.cs">
+      <DependentUpon>CellFormatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\SaveSnapshotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\SaveSnapshotForm.Designer.cs">
+      <DependentUpon>SaveSnapshotForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\SnapshotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\SnapshotForm.Designer.cs">
+      <DependentUpon>SnapshotForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\ReportPrintDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\SheetModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\SheetModule.Designer.cs">
+      <DependentUpon>SheetModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\FindAndReplaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\FindAndReplaceForm.Designer.cs">
+      <DependentUpon>FindAndReplaceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\OptionShowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\OptionShowForm.Designer.cs">
+      <DependentUpon>OptionShowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\ReportingDesignerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\ReportingDesignerForm.Designer.cs">
+      <DependentUpon>ReportingDesignerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\RowAndColIndexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\RowAndColIndexForm.Designer.cs">
+      <DependentUpon>RowAndColIndexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\RowAndColSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\RowAndColSettingForm.Designer.cs">
+      <DependentUpon>RowAndColSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\SheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\Report\SheetForm.Designer.cs">
+      <DependentUpon>SheetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DatabaseDropdownList.cs" />
+    <Compile Include="BusinessManagementModule\PrintBusinessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\PrintBusinessForm.Designer.cs">
+      <DependentUpon>PrintBusinessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\PrintDropdownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\PrintingRecordListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\PrintingRecordListForm.Designer.cs">
+      <DependentUpon>PrintingRecordListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\PrintItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\PrintItemsForm.designer.cs">
+      <DependentUpon>PrintItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\PrintModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\PrintModule.Designer.cs">
+      <DependentUpon>PrintModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\PrintTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\PrintTextForm.Designer.cs">
+      <DependentUpon>PrintTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientMainForm.Designer.cs">
+      <DependentUpon>ClientMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonHelpModule\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonHelpModule\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\CustomDataFieldForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\CustomDataFieldForm.Designer.cs">
+      <DependentUpon>CustomDataFieldForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConvertionModule\CustomPrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataConvertionModule\CustomPrintForm.Designer.cs">
+      <DependentUpon>CustomPrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConvertionModule\DataBackupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataConvertionModule\DataBackupForm.Designer.cs">
+      <DependentUpon>DataBackupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\AccountForm.Designer.cs">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BusinessControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\BusinessControl.Designer.cs">
+      <DependentUpon>BusinessControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BusinessControls\DataTableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\BusinessControls\DataTableControl.Designer.cs">
+      <DependentUpon>DataTableControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BusinessControls\IUserDataInterface.cs" />
+    <Compile Include="Common\BusinessControls\UserInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\BusinessControls\UserInfoControl.Designer.cs">
+      <DependentUpon>UserInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BusinessForm\DataHelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\BusinessForm\DataHelpForm.Designer.cs">
+      <DependentUpon>DataHelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BusinessForm\DataGuidanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\BusinessForm\DataGuidanceForm.Designer.cs">
+      <DependentUpon>DataGuidanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConvertionModule\DataConvertionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataConvertionModule\DataConvertionForm.Designer.cs">
+      <DependentUpon>DataConvertionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConvertionModule\DataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataConvertionModule\DataForm.Designer.cs">
+      <DependentUpon>DataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConvertionModule\DatatCopyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataConvertionModule\DatatCopyForm.Designer.cs">
+      <DependentUpon>DatatCopyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConvertionModule\DataExchangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataConvertionModule\DataExchangeForm.Designer.cs">
+      <DependentUpon>DataExchangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConvertionModule\DataImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataConvertionModule\DataImportForm.Designer.cs">
+      <DependentUpon>DataImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConvertionModule\DataVerifictionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataConvertionModule\DataVerifictionForm.Designer.cs">
+      <DependentUpon>DataVerifictionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConvertionModule\RemoteTableItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataConvertionModule\RemoteTableItemsForm.designer.cs">
+      <DependentUpon>RemoteTableItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConvertionModule\RemoteDatabaseItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataConvertionModule\RemoteDatabaseItemsForm.designer.cs">
+      <DependentUpon>RemoteDatabaseItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConvertionModule\RemoteDatabaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataConvertionModule\RemoteDatabaseForm.Designer.cs">
+      <DependentUpon>RemoteDatabaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConvertionModule\RemoteDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataConvertionModule\RemoteDataForm.Designer.cs">
+      <DependentUpon>RemoteDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConvertionModule\DataRelationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataConvertionModule\DataRelationForm.Designer.cs">
+      <DependentUpon>DataRelationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConvertionModule\RemoteDataModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataConvertionModule\RemoteDataModule.Designer.cs">
+      <DependentUpon>RemoteDataModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConvertionModule\DataRelationModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataConvertionModule\DataRelationModule.Designer.cs">
+      <DependentUpon>DataRelationModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConvertionModule\TableRelationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataConvertionModule\TableRelationForm.Designer.cs">
+      <DependentUpon>TableRelationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\FormResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAuditingModule\AuditingInstanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyAuditingModule\AuditingInstanceControl.designer.cs">
+      <DependentUpon>AuditingInstanceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAuditingModule\AuditingMainPanelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyAuditingModule\AuditingMainPanelControl.designer.cs">
+      <DependentUpon>AuditingMainPanelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAuditingModule\DataAuditingLogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyAuditingModule\DataAuditingLogControl.designer.cs">
+      <DependentUpon>DataAuditingLogControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAuditingModule\GroupAdutingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyAuditingModule\GroupAdutingControl.designer.cs">
+      <DependentUpon>GroupAdutingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAuditingModule\GroupConditionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyAuditingModule\GroupConditionControl.designer.cs">
+      <DependentUpon>GroupConditionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAuditingModule\PersonalAuditingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyAuditingModule\PersonalAuditingControl.designer.cs">
+      <DependentUpon>PersonalAuditingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAuditingModule\PersonalDataAuditingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyAuditingModule\PersonalDataAuditingControl.designer.cs">
+      <DependentUpon>PersonalDataAuditingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAuditingModule\TableAuditingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyAuditingModule\TableAuditingControl.designer.cs">
+      <DependentUpon>TableAuditingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyQueryModule\QueryManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyQueryModule\QueryManagementForm.Designer.cs">
+      <DependentUpon>QueryManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyQueryModule\QueryStatementModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyQueryModule\QueryStatementModule.Designer.cs">
+      <DependentUpon>QueryStatementModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyQueryModule\QueryStatementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyQueryModule\QueryStatementForm.Designer.cs">
+      <DependentUpon>QueryStatementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyQueryModule\QuerySavedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyQueryModule\QuerySavedForm.Designer.cs">
+      <DependentUpon>QuerySavedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyQueryModule\UserQueryDropdownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\AuthorityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\AuthorityForm.Designer.cs">
+      <DependentUpon>AuthorityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\EamilAddressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\EamilAddressForm.Designer.cs">
+      <DependentUpon>EamilAddressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\InterfaceDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\InterfaceDataForm.Designer.cs">
+      <DependentUpon>InterfaceDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\ReadMessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\ReadMessageForm.Designer.cs">
+      <DependentUpon>ReadMessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\PrintMultiSelectedItems.cs" />
+    <Compile Include="SystemManagementModule\SystemMessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\SystemMessageForm.Designer.cs">
+      <DependentUpon>SystemMessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\SendNoticeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\SendNoticeForm.Designer.cs">
+      <DependentUpon>SendNoticeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserMessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserMessageForm.Designer.cs">
+      <DependentUpon>UserMessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserTypeAndDepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserTypeAndDepForm.Designer.cs">
+      <DependentUpon>UserTypeAndDepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommentForm.Designer.cs">
+      <DependentUpon>CommentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonClass\AuthorityCondition.cs" />
+    <Compile Include="Common\CommonClass\GridCellEdited.cs" />
+    <Compile Include="Common\CommonClass\RelaitonDataBusiness.cs" />
+    <Compile Include="Common\CommonControls\CommonTreeDropdownList.cs" />
+    <Compile Include="Common\CommonForm\ExportedModeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\ExportedModeForm.Designer.cs">
+      <DependentUpon>ExportedModeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\QueryConditionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\QueryConditionForm.Designer.cs">
+      <DependentUpon>QueryConditionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DataComparisonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\DataComparisonForm.Designer.cs">
+      <DependentUpon>DataComparisonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyDataModule\DataFilledInstanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyDataModule\DataFilledInstanceForm.Designer.cs">
+      <DependentUpon>DataFilledInstanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BusinessForm\DataTemplateTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\BusinessForm\DataTemplateTableForm.Designer.cs">
+      <DependentUpon>DataTemplateTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BusinessForm\SortingConditionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\BusinessForm\SortingConditionForm.Designer.cs">
+      <DependentUpon>SortingConditionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BusinessForm\DataTableBusiness.cs" />
+    <Compile Include="Common\ClientSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ClientSettingForm.Designer.cs">
+      <DependentUpon>ClientSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonClass\IDataExportedInterface.cs" />
+    <Compile Include="Common\CommonControls\CommonListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\CommonControls\CommonListControl.Designer.cs">
+      <DependentUpon>CommonListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonControls\ITreeDropdownHandler.cs" />
+    <Compile Include="Common\CommonControls\MailControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\CommonControls\MailControl.Designer.cs">
+      <DependentUpon>MailControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonControls\CombinedTreeDropdownBase.cs" />
+    <Compile Include="Common\CommonControls\TreeDropdownBase.cs" />
+    <Compile Include="Common\CommonControls\TreeMultipleList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\CommonControls\TreeDropdownItems.cs" />
+    <Compile Include="Common\CommonControls\SimpleTreeDropdownBase.cs" />
+    <Compile Include="Common\CommonControls\UserListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\CommonControls\UserListControl.Designer.cs">
+      <DependentUpon>UserListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\CellFormatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\CellFormatForm.Designer.cs">
+      <DependentUpon>CellFormatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\TreeSelectedItems.cs" />
+    <Compile Include="Common\CommonForm\CommonProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\CommonProgressForm.Designer.cs">
+      <DependentUpon>CommonProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\CscadeEnumForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\CscadeEnumForm.Designer.cs">
+      <DependentUpon>CscadeEnumForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\DataExchangeModeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\DataExchangeModeForm.Designer.cs">
+      <DependentUpon>DataExchangeModeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\DataTableModeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\DataTableModeForm.Designer.cs">
+      <DependentUpon>DataTableModeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\ImportedModeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\ImportedModeForm.Designer.cs">
+      <DependentUpon>ImportedModeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\IMultiSelectedItemsHandler.cs" />
+    <Compile Include="Common\CommonForm\MultiSelectedItems.cs" />
+    <Compile Include="Common\CommonForm\MultiSelectedItemsBase.cs" />
+    <Compile Include="Common\CommonForm\ExtendedTreeSelectedItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\ExtendedTreeSelectedItemsForm.Designer.cs">
+      <DependentUpon>ExtendedTreeSelectedItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\ProgressForm.Designer.cs">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\DataImportingToolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\DataImportingToolForm.Designer.cs">
+      <DependentUpon>DataImportingToolForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\TextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\TextForm.Designer.cs">
+      <DependentUpon>TextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MailDeliveryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\MailDeliveryForm.Designer.cs">
+      <DependentUpon>MailDeliveryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MailViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\MailViewForm.Designer.cs">
+      <DependentUpon>MailViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MyMailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\MyMailForm.Designer.cs">
+      <DependentUpon>MyMailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AssociatedDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\AssociatedDataForm.Designer.cs">
+      <DependentUpon>AssociatedDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UserListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\UserListForm.Designer.cs">
+      <DependentUpon>UserListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UserNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\UserNameForm.Designer.cs">
+      <DependentUpon>UserNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Utility\ControlContentHelper.cs" />
+    <Compile Include="Common\Utility\UserAttachment.cs" />
+    <Compile Include="DataAuditingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataAuditingControl.Designer.cs">
+      <DependentUpon>DataAuditingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyBusinessModule\BusinessMainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyBusinessModule\BusinessMainControl.Designer.cs">
+      <DependentUpon>BusinessMainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyBusinessModule\BusinessListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyBusinessModule\BusinessListForm.Designer.cs">
+      <DependentUpon>BusinessListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyBusinessModule\CommonBusinessControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyBusinessModule\CommonBusinessControl.Designer.cs">
+      <DependentUpon>CommonBusinessControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyBusinessModule\ReviewersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyBusinessModule\ReviewersForm.Designer.cs">
+      <DependentUpon>ReviewersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyBusinessModule\WorkflowInstanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyBusinessModule\WorkflowInstanceForm.Designer.cs">
+      <DependentUpon>WorkflowInstanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyBusinessModule\SingleBusinessControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyBusinessModule\SingleBusinessControl.Designer.cs">
+      <DependentUpon>SingleBusinessControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyDataModule\CommonDataUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyDataModule\CommonDataUserControl.Designer.cs">
+      <DependentUpon>CommonDataUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppCodeHelper\Business\DataSumbittedInfo.cs" />
+    <Compile Include="MyDataModule\DataFilledListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyDataModule\DataFilledListForm.Designer.cs">
+      <DependentUpon>DataFilledListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyDataModule\SingleDataUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyDataModule\SingleDataUserControl.Designer.cs">
+      <DependentUpon>SingleDataUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyDataModule\DataMainPanelUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyDataModule\DataMainPanelUserControl.Designer.cs">
+      <DependentUpon>DataMainPanelUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyPersonDataModule\PersonalDataInstanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyPersonDataModule\PersonalDataInstanceControl.Designer.cs">
+      <DependentUpon>PersonalDataInstanceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyPersonDataModule\PersonalDataLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyPersonDataModule\PersonalDataLogForm.Designer.cs">
+      <DependentUpon>PersonalDataLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyPersonDataModule\PersonDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyPersonDataModule\PersonDataForm.Designer.cs">
+      <DependentUpon>PersonDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalDataControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PersonalDataControl.Designer.cs">
+      <DependentUpon>PersonalDataControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyPersonDataModule\PersonalDataMainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyPersonDataModule\PersonalDataMainControl.Designer.cs">
+      <DependentUpon>PersonalDataMainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyReportModule\ReportInstanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyReportModule\ReportInstanceControl.Designer.cs">
+      <DependentUpon>ReportInstanceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyQueryModule\QueryPropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyQueryModule\QueryPropertiesForm.Designer.cs">
+      <DependentUpon>QueryPropertiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyQueryModule\StatisticalQueryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyQueryModule\StatisticalQueryControl.Designer.cs">
+      <DependentUpon>StatisticalQueryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyReportModule\ReportMainPanelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyReportModule\ReportMainPanelControl.Designer.cs">
+      <DependentUpon>ReportMainPanelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyReportModule\ShowDetaiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyReportModule\ShowDetaiForm.Designer.cs">
+      <DependentUpon>ShowDetaiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyReportModule\ViewReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyReportModule\ViewReportForm.Designer.cs">
+      <DependentUpon>ViewReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyWorkModule\ReviewedCommentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyWorkModule\ReviewedCommentForm.Designer.cs">
+      <DependentUpon>ReviewedCommentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyQueryModule\QueryConditionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyQueryModule\QueryConditionControl.Designer.cs">
+      <DependentUpon>QueryConditionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyQueryModule\QueryItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyQueryModule\QueryItemControl.Designer.cs">
+      <DependentUpon>QueryItemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyQueryModule\QueryItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyQueryModule\QueryItemForm.Designer.cs">
+      <DependentUpon>QueryItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyQueryModule\QueryMainPanelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyQueryModule\QueryMainPanelControl.Designer.cs">
+      <DependentUpon>QueryMainPanelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ResourceIcon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceIcon.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Utility\SpreadToolHelper.cs" />
+    <Compile Include="BusinessDesignerModule\AppointmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\AppointmentForm.Designer.cs">
+      <DependentUpon>AppointmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\AppointmentInstanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\AppointmentInstanceForm.Designer.cs">
+      <DependentUpon>AppointmentInstanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\AppointmentModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\AppointmentModule.Designer.cs">
+      <DependentUpon>AppointmentModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DataAuditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DataAuditingForm.Designer.cs">
+      <DependentUpon>DataAuditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\InterfaceModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\InterfaceModule.Designer.cs">
+      <DependentUpon>InterfaceModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\InterfaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\InterfaceForm.Designer.cs">
+      <DependentUpon>InterfaceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DatabaseExchanged.cs" />
+    <Compile Include="BusinessManagementModule\EnumMultiSelectedItems.cs" />
+    <Compile Include="BusinessDesignerModule\WorkflowDataFieldForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\WorkflowDataFieldForm.Designer.cs">
+      <DependentUpon>WorkflowDataFieldForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DataFieldListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DataFieldListForm.Designer.cs">
+      <DependentUpon>DataFieldListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonClass\TreeDataExchanged.cs" />
+    <Compile Include="BusinessManagementModule\AssociationExchanged.cs" />
+    <Compile Include="BusinessManagementModule\CombinedTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\CombinedTableForm.Designer.cs">
+      <DependentUpon>CombinedTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\CombinedTableModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\CombinedTableModule.Designer.cs">
+      <DependentUpon>CombinedTableModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\CombinedTableDropdownList.cs" />
+    <Compile Include="BusinessManagementModule\WorkflowInstanceListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\WorkflowInstanceListForm.Designer.cs">
+      <DependentUpon>WorkflowInstanceListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\WorkflowLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\WorkflowLogForm.Designer.cs">
+      <DependentUpon>WorkflowLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportControl.Designer.cs">
+      <DependentUpon>ReportControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\DepartmentExchanged.cs" />
+    <Compile Include="BusinessManagementModule\EnumExchanged.cs" />
+    <Compile Include="BusinessDesignerModule\QueryTreeDropdownList.cs" />
+    <Compile Include="BusinessDesignerModule\WorkflowAndDataFieldForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\WorkflowAndDataFieldForm.Designer.cs">
+      <DependentUpon>WorkflowAndDataFieldForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\WorkflowEdgeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\WorkflowEdgeForm.Designer.cs">
+      <DependentUpon>WorkflowEdgeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\WorkflowMapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\WorkflowMapForm.Designer.cs">
+      <DependentUpon>WorkflowMapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\SystemLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\SystemLogForm.Designer.cs">
+      <DependentUpon>SystemLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\SystemManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\SystemManagementForm.Designer.cs">
+      <DependentUpon>SystemManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserPhotoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserPhotoForm.Designer.cs">
+      <DependentUpon>UserPhotoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserToolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserToolForm.Designer.cs">
+      <DependentUpon>UserToolForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserTypeTreeDropdownList.cs" />
+    <Compile Include="SystemManagementModule\UserTypeMultiSelectedItems.cs" />
+    <Compile Include="SystemManagementModule\RoleMultiSelectedItems.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="BusinessManagementModule\AssociatedDataFieldDropdownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\CustomQueryDefinitionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\CustomQueryDefinitionForm.Designer.cs">
+      <DependentUpon>CustomQueryDefinitionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\MenuModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\MenuModule.Designer.cs">
+      <DependentUpon>MenuModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\QueryDropdownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\QueryItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\QueryItemsForm.designer.cs">
+      <DependentUpon>QueryItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\ReportItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\ReportItemsForm.designer.cs">
+      <DependentUpon>ReportItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\ReportDropdownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\ReportModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\ReportModule.Designer.cs">
+      <DependentUpon>ReportModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\WorkflowDropdownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\WorkflowItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\WorkflowItemsForm.designer.cs">
+      <DependentUpon>WorkflowItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DataFieldShowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DataFieldShowForm.designer.cs">
+      <DependentUpon>DataFieldShowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DataFormModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DataFormModule.Designer.cs">
+      <DependentUpon>DataFormModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DataFieldRelationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DataFieldRelationForm.Designer.cs">
+      <DependentUpon>DataFieldRelationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DataFillDropdownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\ViewDropdownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DataTableItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DataTableItemsForm.designer.cs">
+      <DependentUpon>DataTableItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DataTableShowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DataTableShowForm.designer.cs">
+      <DependentUpon>DataTableShowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DataTableDropdownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\CommonListItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\CommonListItemsForm.Designer.cs">
+      <DependentUpon>CommonListItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\QuerySettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\QuerySettingForm.Designer.cs">
+      <DependentUpon>QuerySettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DataFillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DataFillForm.Designer.cs">
+      <DependentUpon>DataFillForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DataFillModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DataFillModule.Designer.cs">
+      <DependentUpon>DataFillModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DataFillItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DataFillItemsForm.designer.cs">
+      <DependentUpon>DataFillItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\ViewItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\ViewItemsForm.designer.cs">
+      <DependentUpon>ViewItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\WorkflowProcessModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\WorkflowProcessModule.Designer.cs">
+      <DependentUpon>WorkflowProcessModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\WorkflowModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\WorkflowModule.Designer.cs">
+      <DependentUpon>WorkflowModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\ViewModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\ViewModule.Designer.cs">
+      <DependentUpon>ViewModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DataFieldItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DataFieldItemsForm.designer.cs">
+      <DependentUpon>DataFieldItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DataFieldDropdownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\CommonControls\TreeDropdownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppCodeHelper\CurrentUser.cs" />
+    <Compile Include="AppCodeHelper\LogHelper.cs" />
+    <Compile Include="AppCodeHelper\NetworkConnection.cs" />
+    <Compile Include="AppCodeHelper\ProxyFactory\BusinessChannelFactory.cs" />
+    <Compile Include="AppCodeHelper\ProxyFactory\CommonFactory.cs" />
+    <Compile Include="AppCodeHelper\ProxyFactory\SystemCallBackFactory.cs" />
+    <Compile Include="AppCodeHelper\ProxyFactory\SystemChannelFactory.cs" />
+    <Compile Include="AppCodeHelper\ProxyFactory\UserChannelFactory.cs" />
+    <Compile Include="AppCodeHelper\SystemConfigHelper.cs" />
+    <Compile Include="AppCodeHelper\UserValidator.cs" />
+    <Compile Include="CommonBusinessControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonBusinessControl.Designer.cs">
+      <DependentUpon>CommonBusinessControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\AssociatedDataFieldSelectedItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\AssociatedDataFieldSelectedItemsForm.designer.cs">
+      <DependentUpon>AssociatedDataFieldSelectedItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\CheckedSelectedItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\CheckedSelectedItemsForm.Designer.cs">
+      <DependentUpon>CheckedSelectedItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\TreeSelectedItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\TreeSelectedItemsForm.Designer.cs">
+      <DependentUpon>TreeSelectedItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\DropDownSelectedItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\DropDownSelectedItemsForm.Designer.cs">
+      <DependentUpon>DropDownSelectedItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\MultiSelectedItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\MultiSelectedItemsForm.Designer.cs">
+      <DependentUpon>MultiSelectedItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\TreeLayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\TreeLayerForm.Designer.cs">
+      <DependentUpon>TreeLayerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\AssociatedDataFieldModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\AssociatedDataFieldModule.designer.cs">
+      <DependentUpon>AssociatedDataFieldModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\AssociationDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\AssociationDataForm.Designer.cs">
+      <DependentUpon>AssociationDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\AssociationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\AssociationForm.Designer.cs">
+      <DependentUpon>AssociationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\AssociationModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\AssociationModule.designer.cs">
+      <DependentUpon>AssociationModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DatabaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DatabaseForm.Designer.cs">
+      <DependentUpon>DatabaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\ViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\ViewForm.Designer.cs">
+      <DependentUpon>ViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DefaultItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DefaultItemForm.Designer.cs">
+      <DependentUpon>DefaultItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DefaultItemModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\DefaultItemModule.Designer.cs">
+      <DependentUpon>DefaultItemModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\EnumForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\EnumForm.Designer.cs">
+      <DependentUpon>EnumForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\EnumModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\EnumModule.Designer.cs">
+      <DependentUpon>EnumModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DataTableModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DataTableModule.Designer.cs">
+      <DependentUpon>DataTableModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DataFieldModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\DataFieldModule.Designer.cs">
+      <DependentUpon>DataFieldModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManagementModule\ExpressionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessManagementModule\ExpressionForm.Designer.cs">
+      <DependentUpon>ExpressionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\GroupModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\GroupModule.Designer.cs">
+      <DependentUpon>GroupModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\QueryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\QueryForm.Designer.cs">
+      <DependentUpon>QueryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\QueryModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\QueryModule.Designer.cs">
+      <DependentUpon>QueryModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\MenuBusinessModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\MenuBusinessModule.Designer.cs">
+      <DependentUpon>MenuBusinessModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\WorkflowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessDesignerModule\WorkflowForm.Designer.cs">
+      <DependentUpon>WorkflowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\RoleItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\RoleItemsForm.designer.cs">
+      <DependentUpon>RoleItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\RoleSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\RoleSettingForm.Designer.cs">
+      <DependentUpon>RoleSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\DepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\DepartmentForm.Designer.cs">
+      <DependentUpon>DepartmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonForm\TreeLayerModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\CommonForm\TreeLayerModule.Designer.cs">
+      <DependentUpon>TreeLayerModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\DepartmentModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\DepartmentModule.Designer.cs">
+      <DependentUpon>DepartmentModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\RoleModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\RoleModule.Designer.cs">
+      <DependentUpon>RoleModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\RoleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\RoleForm.Designer.cs">
+      <DependentUpon>RoleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\SingleUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\SingleUserForm.Designer.cs">
+      <DependentUpon>SingleUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserDataForm.Designer.cs">
+      <DependentUpon>UserDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserTypeModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserTypeModule.Designer.cs">
+      <DependentUpon>UserTypeModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\UserTypeForm.Designer.cs">
+      <DependentUpon>UserTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyWorkUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyWorkUserControl.Designer.cs">
+      <DependentUpon>MyWorkUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagementModule\RoleDropdownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\RemoteUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManagementModule\RemoteUserForm.Designer.cs">
+      <DependentUpon>RemoteUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserBusinessControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserBusinessControl.Designer.cs">
+      <DependentUpon>UserBusinessControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSettingForm.Designer.cs">
+      <DependentUpon>UserSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuditingUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AuditingUserControl.Designer.cs">
+      <DependentUpon>AuditingUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QueryUserControl.Designer.cs">
+      <DependentUpon>QueryUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreenForm.Designer.cs">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SumbittedDataUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SumbittedDataUserControl.Designer.cs">
+      <DependentUpon>SumbittedDataUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemMainForm.Designer.cs">
+      <DependentUpon>SystemMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainPageControl.Designer.cs">
+      <DependentUpon>MainPageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnhandledExceptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnhandledExceptionForm.Designer.cs">
+      <DependentUpon>UnhandledExceptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowDesignerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkflowDesignerForm.Designer.cs">
+      <DependentUpon>WorkflowDesignerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BusinessDesignerModule\DataAuditingModule.resx">
+      <DependentUpon>DataAuditingModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\Report\CellConditionForm.resx">
+      <DependentUpon>CellConditionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\Report\CellConditionSettingForm.resx">
+      <DependentUpon>CellConditionSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\Report\CellFormatForm.resx">
+      <DependentUpon>CellFormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\Report\SaveSnapshotForm.resx">
+      <DependentUpon>SaveSnapshotForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\Report\SnapshotForm.resx">
+      <DependentUpon>SnapshotForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\Report\SheetModule.resx">
+      <DependentUpon>SheetModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\Report\FindAndReplaceForm.resx">
+      <DependentUpon>FindAndReplaceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\Report\OptionShowForm.resx">
+      <DependentUpon>OptionShowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\Report\ReportingDesignerForm.resx">
+      <DependentUpon>ReportingDesignerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\Report\RowAndColIndexForm.resx">
+      <DependentUpon>RowAndColIndexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\Report\RowAndColSettingForm.resx">
+      <DependentUpon>RowAndColSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\Report\SheetForm.resx">
+      <DependentUpon>SheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\PrintBusinessForm.resx">
+      <DependentUpon>PrintBusinessForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\PrintDropdownList.resx">
+      <DependentUpon>PrintDropdownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\PrintingRecordListForm.resx">
+      <DependentUpon>PrintingRecordListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\PrintItemsForm.resx">
+      <DependentUpon>PrintItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\PrintModule.resx">
+      <DependentUpon>PrintModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\PrintTextForm.resx">
+      <DependentUpon>PrintTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientMainForm.resx">
+      <DependentUpon>ClientMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\CustomDataFieldForm.resx">
+      <DependentUpon>CustomDataFieldForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConvertionModule\CustomPrintForm.resx">
+      <DependentUpon>CustomPrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConvertionModule\DataBackupForm.resx">
+      <DependentUpon>DataBackupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\AccountForm.resx">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\BusinessControl.resx">
+      <DependentUpon>BusinessControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\BusinessControls\DataTableControl.resx">
+      <DependentUpon>DataTableControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\BusinessControls\UserInfoControl.resx">
+      <DependentUpon>UserInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\BusinessForm\DataHelpForm.resx">
+      <DependentUpon>DataHelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\BusinessForm\DataGuidanceForm.resx">
+      <DependentUpon>DataGuidanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConvertionModule\DataConvertionForm.resx">
+      <DependentUpon>DataConvertionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConvertionModule\DataForm.resx">
+      <DependentUpon>DataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConvertionModule\DatatCopyForm.resx">
+      <DependentUpon>DatatCopyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConvertionModule\DataExchangeForm.resx">
+      <DependentUpon>DataExchangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConvertionModule\DataImportForm.resx">
+      <DependentUpon>DataImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConvertionModule\DataVerifictionForm.resx">
+      <DependentUpon>DataVerifictionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConvertionModule\RemoteTableItemsForm.resx">
+      <DependentUpon>RemoteTableItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConvertionModule\RemoteDatabaseItemsForm.resx">
+      <DependentUpon>RemoteDatabaseItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConvertionModule\RemoteDatabaseForm.resx">
+      <DependentUpon>RemoteDatabaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConvertionModule\RemoteDataForm.resx">
+      <DependentUpon>RemoteDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConvertionModule\DataRelationForm.resx">
+      <DependentUpon>DataRelationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConvertionModule\RemoteDataModule.resx">
+      <DependentUpon>RemoteDataModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConvertionModule\DataRelationModule.resx">
+      <DependentUpon>DataRelationModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataConvertionModule\TableRelationForm.resx">
+      <DependentUpon>TableRelationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\FormResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>FormResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAuditingModule\AuditingInstanceControl.resx">
+      <DependentUpon>AuditingInstanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAuditingModule\AuditingMainPanelControl.resx">
+      <DependentUpon>AuditingMainPanelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAuditingModule\DataAuditingLogControl.resx">
+      <DependentUpon>DataAuditingLogControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAuditingModule\GroupAdutingControl.resx">
+      <DependentUpon>GroupAdutingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAuditingModule\GroupConditionControl.resx">
+      <DependentUpon>GroupConditionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAuditingModule\PersonalAuditingControl.resx">
+      <DependentUpon>PersonalAuditingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAuditingModule\PersonalDataAuditingControl.resx">
+      <DependentUpon>PersonalDataAuditingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAuditingModule\TableAuditingControl.resx">
+      <DependentUpon>TableAuditingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyQueryModule\QueryManagementForm.resx">
+      <DependentUpon>QueryManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyQueryModule\QueryStatementModule.resx">
+      <DependentUpon>QueryStatementModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyQueryModule\QueryStatementForm.resx">
+      <DependentUpon>QueryStatementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyQueryModule\QuerySavedForm.resx">
+      <DependentUpon>QuerySavedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyQueryModule\UserQueryDropdownList.resx">
+      <DependentUpon>UserQueryDropdownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\AuthorityForm.resx">
+      <DependentUpon>AuthorityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\EamilAddressForm.resx">
+      <DependentUpon>EamilAddressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\InterfaceDataForm.resx">
+      <DependentUpon>InterfaceDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\ReadMessageForm.resx">
+      <DependentUpon>ReadMessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\SystemMessageForm.resx">
+      <DependentUpon>SystemMessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\SendNoticeForm.resx">
+      <DependentUpon>SendNoticeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\UserMessageForm.resx">
+      <DependentUpon>UserMessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\UserTypeAndDepForm.resx">
+      <DependentUpon>UserTypeAndDepForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommentForm.resx">
+      <DependentUpon>CommentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\ExportedModeForm.resx">
+      <DependentUpon>ExportedModeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\QueryConditionForm.resx">
+      <DependentUpon>QueryConditionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\DataComparisonForm.resx">
+      <DependentUpon>DataComparisonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyDataModule\DataFilledInstanceForm.resx">
+      <DependentUpon>DataFilledInstanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\BusinessForm\DataTemplateTableForm.resx">
+      <DependentUpon>DataTemplateTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\BusinessForm\SortingConditionForm.resx">
+      <DependentUpon>SortingConditionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ClientSettingForm.resx">
+      <DependentUpon>ClientSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonControls\CommonListControl.resx">
+      <DependentUpon>CommonListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonControls\MailControl.resx">
+      <DependentUpon>MailControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonControls\TreeMultipleList.resx">
+      <DependentUpon>TreeMultipleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonControls\UserListControl.resx">
+      <DependentUpon>UserListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\CellFormatForm.resx">
+      <DependentUpon>CellFormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\CommonProgressForm.resx">
+      <DependentUpon>CommonProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\CscadeEnumForm.resx">
+      <DependentUpon>CscadeEnumForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\DataExchangeModeForm.resx">
+      <DependentUpon>DataExchangeModeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\DataTableModeForm.resx">
+      <DependentUpon>DataTableModeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\ExtendedTreeSelectedItemsForm.resx">
+      <DependentUpon>ExtendedTreeSelectedItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\ImportedModeForm.resx">
+      <DependentUpon>ImportedModeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\ProgressForm.resx">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\DataImportingToolForm.resx">
+      <DependentUpon>DataImportingToolForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\TextForm.resx">
+      <DependentUpon>TextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MailDeliveryForm.resx">
+      <DependentUpon>MailDeliveryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MailViewForm.resx">
+      <DependentUpon>MailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MyMailForm.resx">
+      <DependentUpon>MyMailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\AssociatedDataForm.resx">
+      <DependentUpon>AssociatedDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\UserListForm.resx">
+      <DependentUpon>UserListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\UserNameForm.resx">
+      <DependentUpon>UserNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataAuditingControl.resx">
+      <DependentUpon>DataAuditingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyBusinessModule\BusinessMainControl.resx">
+      <DependentUpon>BusinessMainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyBusinessModule\BusinessListForm.resx">
+      <DependentUpon>BusinessListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyBusinessModule\CommonBusinessControl.resx">
+      <DependentUpon>CommonBusinessControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyBusinessModule\ReviewersForm.resx">
+      <DependentUpon>ReviewersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyBusinessModule\SingleBusinessControl.resx">
+      <DependentUpon>SingleBusinessControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyBusinessModule\WorkflowInstanceForm.resx">
+      <DependentUpon>WorkflowInstanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyDataModule\CommonDataUserControl.resx">
+      <DependentUpon>CommonDataUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyDataModule\DataFilledListForm.resx">
+      <DependentUpon>DataFilledListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyDataModule\SingleDataUserControl.resx">
+      <DependentUpon>SingleDataUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyDataModule\DataMainPanelUserControl.resx">
+      <DependentUpon>DataMainPanelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyPersonDataModule\PersonalDataInstanceControl.resx">
+      <DependentUpon>PersonalDataInstanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyPersonDataModule\PersonalDataLogForm.resx">
+      <DependentUpon>PersonalDataLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyPersonDataModule\PersonDataForm.resx">
+      <DependentUpon>PersonDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalDataControl.resx">
+      <DependentUpon>PersonalDataControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyPersonDataModule\PersonalDataMainControl.resx">
+      <DependentUpon>PersonalDataMainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyQueryModule\QueryPropertiesForm.resx">
+      <DependentUpon>QueryPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyQueryModule\StatisticalQueryControl.resx">
+      <DependentUpon>StatisticalQueryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyReportModule\ReportInstanceControl.resx">
+      <DependentUpon>ReportInstanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyReportModule\ReportMainPanelControl.resx">
+      <DependentUpon>ReportMainPanelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyReportModule\ShowDetaiForm.resx">
+      <DependentUpon>ShowDetaiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyReportModule\ViewReportForm.resx">
+      <DependentUpon>ViewReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyWorkModule\ReviewedCommentForm.resx">
+      <DependentUpon>ReviewedCommentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyQueryModule\QueryConditionControl.resx">
+      <DependentUpon>QueryConditionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyQueryModule\QueryItemControl.resx">
+      <DependentUpon>QueryItemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyQueryModule\QueryItemForm.resx">
+      <DependentUpon>QueryItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyQueryModule\QueryMainPanelControl.resx">
+      <DependentUpon>QueryMainPanelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ResourceIcon.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceIcon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\AppointmentInstanceForm.resx">
+      <DependentUpon>AppointmentInstanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\AssociatedDataFieldDropdownList.resx">
+      <DependentUpon>AssociatedDataFieldDropdownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\AppointmentForm.resx">
+      <DependentUpon>AppointmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\AppointmentModule.resx">
+      <DependentUpon>AppointmentModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\DataAuditingForm.resx">
+      <DependentUpon>DataAuditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\InterfaceModule.resx">
+      <DependentUpon>InterfaceModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\InterfaceForm.resx">
+      <DependentUpon>InterfaceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\CustomQueryDefinitionForm.resx">
+      <DependentUpon>CustomQueryDefinitionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\WorkflowDataFieldForm.resx">
+      <DependentUpon>WorkflowDataFieldForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\DataFieldListForm.resx">
+      <DependentUpon>DataFieldListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\MenuModule.resx">
+      <DependentUpon>MenuModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\QueryDropdownList.resx">
+      <DependentUpon>QueryDropdownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\QueryItemsForm.resx">
+      <DependentUpon>QueryItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\ReportItemsForm.resx">
+      <DependentUpon>ReportItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\ReportDropdownList.resx">
+      <DependentUpon>ReportDropdownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\ReportModule.resx">
+      <DependentUpon>ReportModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\CombinedTableForm.resx">
+      <DependentUpon>CombinedTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\CombinedTableModule.resx">
+      <DependentUpon>CombinedTableModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\WorkflowAndDataFieldForm.resx">
+      <DependentUpon>WorkflowAndDataFieldForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\WorkflowDropdownList.resx">
+      <DependentUpon>WorkflowDropdownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\WorkflowEdgeForm.resx">
+      <DependentUpon>WorkflowEdgeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\WorkflowInstanceListForm.resx">
+      <DependentUpon>WorkflowInstanceListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\WorkflowItemsForm.resx">
+      <DependentUpon>WorkflowItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\DataFieldShowForm.resx">
+      <DependentUpon>DataFieldShowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\DataFormModule.resx">
+      <DependentUpon>DataFormModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\DataFieldRelationForm.resx">
+      <DependentUpon>DataFieldRelationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\DataFillDropdownList.resx">
+      <DependentUpon>DataFillDropdownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\ViewDropdownList.resx">
+      <DependentUpon>ViewDropdownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\DataTableItemsForm.resx">
+      <DependentUpon>DataTableItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\DataTableShowForm.resx">
+      <DependentUpon>DataTableShowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\DataTableDropdownList.resx">
+      <DependentUpon>DataTableDropdownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\CommonListItemsForm.resx">
+      <DependentUpon>CommonListItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\QuerySettingForm.resx">
+      <DependentUpon>QuerySettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\DataFillForm.resx">
+      <DependentUpon>DataFillForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\DataFillModule.resx">
+      <DependentUpon>DataFillModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\DataFillItemsForm.resx">
+      <DependentUpon>DataFillItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\ViewItemsForm.resx">
+      <DependentUpon>ViewItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\WorkflowLogForm.resx">
+      <DependentUpon>WorkflowLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\WorkflowMapForm.resx">
+      <DependentUpon>WorkflowMapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\WorkflowProcessModule.resx">
+      <DependentUpon>WorkflowProcessModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\WorkflowModule.resx">
+      <DependentUpon>WorkflowModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\ViewModule.resx">
+      <DependentUpon>ViewModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\DataFieldItemsForm.resx">
+      <DependentUpon>DataFieldItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\DataFieldDropdownList.resx">
+      <DependentUpon>DataFieldDropdownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonControls\TreeDropdownList.resx">
+      <DependentUpon>TreeDropdownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonBusinessControl.resx">
+      <DependentUpon>CommonBusinessControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\AssociatedDataFieldSelectedItemsForm.resx">
+      <DependentUpon>AssociatedDataFieldSelectedItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\CheckedSelectedItemsForm.resx">
+      <DependentUpon>CheckedSelectedItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\TreeSelectedItemsForm.resx">
+      <DependentUpon>TreeSelectedItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\DropDownSelectedItemsForm.resx">
+      <DependentUpon>DropDownSelectedItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\MultiSelectedItemsForm.resx">
+      <DependentUpon>MultiSelectedItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\TreeLayerForm.resx">
+      <DependentUpon>TreeLayerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\AssociatedDataFieldModule.resx">
+      <DependentUpon>AssociatedDataFieldModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\AssociationDataForm.resx">
+      <DependentUpon>AssociationDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\AssociationForm.resx">
+      <DependentUpon>AssociationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\AssociationModule.resx">
+      <DependentUpon>AssociationModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\DatabaseForm.resx">
+      <DependentUpon>DatabaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\ViewForm.resx">
+      <DependentUpon>ViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\DefaultItemForm.resx">
+      <DependentUpon>DefaultItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\DefaultItemModule.resx">
+      <DependentUpon>DefaultItemModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\EnumForm.resx">
+      <DependentUpon>EnumForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\EnumModule.resx">
+      <DependentUpon>EnumModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\DataTableModule.resx">
+      <DependentUpon>DataTableModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\DataFieldModule.resx">
+      <DependentUpon>DataFieldModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessManagementModule\ExpressionForm.resx">
+      <DependentUpon>ExpressionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\GroupModule.resx">
+      <DependentUpon>GroupModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\QueryForm.resx">
+      <DependentUpon>QueryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\QueryModule.resx">
+      <DependentUpon>QueryModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\MenuBusinessModule.resx">
+      <DependentUpon>MenuBusinessModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessDesignerModule\WorkflowForm.resx">
+      <DependentUpon>WorkflowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportControl.resx">
+      <DependentUpon>ReportControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\RoleItemsForm.resx">
+      <DependentUpon>RoleItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\RoleSettingForm.resx">
+      <DependentUpon>RoleSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\DepartmentForm.resx">
+      <DependentUpon>DepartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonForm\TreeLayerModule.resx">
+      <DependentUpon>TreeLayerModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyWorkUserControl.resx">
+      <DependentUpon>MyWorkUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\DepartmentModule.resx">
+      <DependentUpon>DepartmentModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\RoleModule.resx">
+      <DependentUpon>RoleModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\RoleForm.resx">
+      <DependentUpon>RoleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\SingleUserForm.resx">
+      <DependentUpon>SingleUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\SystemLogForm.resx">
+      <DependentUpon>SystemLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\SystemManagementForm.resx">
+      <DependentUpon>SystemManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\UserDataForm.resx">
+      <DependentUpon>UserDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\UserPhotoForm.resx">
+      <DependentUpon>UserPhotoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\UserToolForm.resx">
+      <DependentUpon>UserToolForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\UserTypeForm.resx">
+      <DependentUpon>UserTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\UserTypeModule.resx">
+      <DependentUpon>UserTypeModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\RoleDropdownList.resx">
+      <DependentUpon>RoleDropdownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManagementModule\RemoteUserForm.resx">
+      <DependentUpon>RemoteUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserBusinessControl.resx">
+      <DependentUpon>UserBusinessControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSettingForm.resx">
+      <DependentUpon>UserSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuditingUserControl.resx">
+      <DependentUpon>AuditingUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="QueryUserControl.resx">
+      <DependentUpon>QueryUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreenForm.resx">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SumbittedDataUserControl.resx">
+      <DependentUpon>SumbittedDataUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemMainForm.resx">
+      <DependentUpon>SystemMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPageControl.resx">
+      <DependentUpon>MainPageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnhandledExceptionForm.resx">
+      <DependentUpon>UnhandledExceptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkflowDesignerForm.resx">
+      <DependentUpon>WorkflowDesignerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WindowsFormsClient.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppFramework.Core\AppFramework.Core.csproj">
+      <Project>{2b0ae85c-4142-42dc-b97e-5d5e9557a9e6}</Project>
+      <Name>AppFramework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppFramework.Reference\AppFramework.Reference.csproj">
+      <Project>{a903b873-5480-48a1-bca3-86f45c9640dc}</Project>
+      <Name>AppFramework.Reference</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppFramework.WinFormsControls\AppFramework.WinFormsControls.csproj">
+      <Project>{ee9d1f4d-528e-43e7-90e9-7b0e067f594f}</Project>
+      <Name>AppFramework.WinFormsControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppFramework.WinFormsLibrary\AppFramework.WinFormsLibrary.csproj">
+      <Project>{d8defe18-438e-422e-893a-8694539dacf4}</Project>
+      <Name>AppFramework.WinFormsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blue.CommonBusinessLogic\Blue.CommonBusinessLogic.csproj">
+      <Project>{4c7109f7-7e4a-41d8-a070-f9103d7630ef}</Project>
+      <Name>Blue.CommonBusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blue.CustomLibrary\Blue.CustomLibrary.csproj">
+      <Project>{3c440cad-450c-4517-98cc-762a0084bc5a}</Project>
+      <Name>Blue.CustomLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blue.Model\Blue.Model.csproj">
+      <Project>{a49ec00a-f9bd-4f53-9a88-bed92d768003}</Project>
+      <Name>Blue.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blue.SharedInterface\Blue.SharedInterface.csproj">
+      <Project>{ff9a168d-6576-48a3-96b9-7bcd855258f4}</Project>
+      <Name>Blue.SharedInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blue.WCFContracts\Blue.WCFContracts.csproj">
+      <Project>{2269095b-f5f9-4f05-b52d-ad7ddebb4cff}</Project>
+      <Name>Blue.WCFContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blue.WinBusinessLogic\Blue.WinBusinessLogic.csproj">
+      <Project>{2a574363-e95b-4ff1-aedf-1c05bf94ec4e}</Project>
+      <Name>Blue.WinBusinessLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Client.ico" />
+    <Content Include="Resources\Images\Account_Exit.png" />
+    <Content Include="Resources\Images\Account_Mail.png" />
+    <Content Include="Resources\Images\Account_PersonalInfo.png" />
+    <Content Include="Resources\Images\Assistance_Help.png" />
+    <Content Include="Resources\Images\Assistance_Question.png" />
+    <Content Include="Resources\Images\Assistance_Software.png" />
+    <Content Include="Resources\Images\Assistance_Upgrage.png" />
+    <Content Include="Resources\Images\Auditing_Main_Audited.png" />
+    <None Include="Resources\Images\Auditing_Main_Head.png" />
+    <Content Include="Resources\Images\Auditing_Main_Statistics.png" />
+    <Content Include="Resources\Images\Auditing_Main_UnAudited.png" />
+    <Content Include="Resources\Images\Auditing_PersonInfo_Auditing.png" />
+    <Content Include="Resources\Images\Auditing_PersonInfo_Auditing_Cancelled.png" />
+    <Content Include="Resources\Images\BarButtonItem_Appointment.png" />
+    <Content Include="Resources\Images\BarButtonItem_Appointment_Instance.png" />
+    <Content Include="Resources\Images\BarButtonItem_Auditing.png" />
+    <Content Include="Resources\Images\BarButtonItem_Data.png" />
+    <Content Include="Resources\Images\BarButtonItem_DataExchange.png" />
+    <Content Include="Resources\Images\BarButtonItem_InfoUpdated.png" />
+    <Content Include="Resources\Images\BarButtonItem_InputReport.png" />
+    <Content Include="Resources\Images\BarButtonItem_Interface.png" />
+    <Content Include="Resources\Images\BarButtonItem_Manager.png" />
+    <Content Include="Resources\Images\BarButtonItem_Print.png" />
+    <Content Include="Resources\Images\BarButtonItem_RemoteData.png" />
+    <Content Include="Resources\Images\BarButtonItem_Salary.png" />
+    <Content Include="Resources\Images\BarButtonItem_UserMessage.png" />
+    <Content Include="Resources\Images\BarButtonItem_Work.png" />
+    <Content Include="Resources\Images\BarButtonItem_Workflow_Instance.png" />
+    <Content Include="Resources\Images\BarButtonItem_Association.png" />
+    <Content Include="Resources\Images\BarButtonItem_Authority.png" />
+    <Content Include="Resources\Images\BarButtonItem_Backp.png" />
+    <Content Include="Resources\Images\BarButtonItem_Combined_Table.png" />
+    <Content Include="Resources\Images\BarButtonItem_Database.png" />
+    <Content Include="Resources\Images\BarButtonItem_Department.png" />
+    <Content Include="Resources\Images\BarButtonItem_Empty.png" />
+    <Content Include="Resources\Images\BarButtonItem_Enum.png" />
+    <Content Include="Resources\Images\BarButtonItem_Help.png" />
+    <Content Include="Resources\Images\BarButtonItem_Import.png" />
+    <Content Include="Resources\Images\BarButtonItem_Log.png" />
+    <Content Include="Resources\Images\BarButtonItem_Maintain.png" />
+    <Content Include="Resources\Images\BarButtonItem_Menu.png" />
+    <Content Include="Resources\Images\BarButtonItem_Message.png" />
+    <Content Include="Resources\Images\BarButtonItem_Question.png" />
+    <Content Include="Resources\Images\BarButtonItem_Restart.png" />
+    <Content Include="Resources\Images\BarButtonItem_Role.png" />
+    <Content Include="Resources\Images\BarButtonItem_Setting.png" />
+    <Content Include="Resources\Images\BarButtonItem_Software.png" />
+    <Content Include="Resources\Images\BarButtonItem_Swap.png" />
+    <Content Include="Resources\Images\BarButtonItem_Upgrade.png" />
+    <Content Include="Resources\Images\BarButtonItem_User.png" />
+    <Content Include="Resources\Images\BarButtonItem_UserType.png" />
+    <Content Include="Resources\Images\BarButtonItem_Verification.png" />
+    <Content Include="Resources\Images\Business_Appointment.png" />
+    <Content Include="Resources\Images\Business_Appointment_Instance.png" />
+    <Content Include="Resources\Images\Business_InfoUpdated.png" />
+    <Content Include="Resources\Images\Business_Interface.png" />
+    <Content Include="Resources\Images\Business_Print.png" />
+    <Content Include="Resources\Images\Business_System_Table.png" />
+    <Content Include="Resources\Images\Business_Workflow_Instance.png" />
+    <Content Include="Resources\Images\Business_Combined_Table.png" />
+    <Content Include="Resources\Images\Business_Menu.png" />
+    <Content Include="Resources\Images\Button_Abort.png" />
+    <Content Include="Resources\Images\Button_Add.png" />
+    <None Include="Resources\Images\Button_Edit.png" />
+    <None Include="Resources\Images\Button_Delete.png" />
+    <None Include="Resources\Images\Button_Check.png" />
+    <None Include="Resources\Images\Button_Archive.png" />
+    <Content Include="Resources\Images\Button_Add_New.png" />
+    <Content Include="Resources\Images\Button_Application.png" />
+    <Content Include="Resources\Images\Button_Audit.png" />
+    <Content Include="Resources\Images\Button_Init.png" />
+    <Content Include="Resources\Images\Button_Maxmize.png" />
+    <Content Include="Resources\Images\Button_Update.png" />
+    <Content Include="Resources\Images\Button_View.png" />
+    <None Include="Resources\Images\Button_View_1.png" />
+    <None Include="Resources\Images\Button_Withdraw.png" />
+    <Content Include="Resources\Images\Client_AuditedStatus_Audited.png" />
+    <Content Include="Resources\Images\Client_AuditedStatus_Auditing.png" />
+    <Content Include="Resources\Images\Client_AuditedStatus_None.png" />
+    <Content Include="Resources\Images\Client_AuditedStatus_UnAudited.png" />
+    <Content Include="Resources\Images\Client_Backgroud.jpg" />
+    <Content Include="Resources\Images\Client_Business_List_Caption.png" />
+    <Content Include="Resources\Images\Client_Common_Alert.png" />
+    <Content Include="Resources\Images\Client_Common_All.png" />
+    <Content Include="Resources\Images\Client_Common_All_Delete_Log.png" />
+    <Content Include="Resources\Images\Client_Common_Back.png" />
+    <None Include="Resources\Images\Client_Common_Business_Caption.png" />
+    <Content Include="Resources\Images\Client_Common_Calendar_1.png" />
+    <Content Include="Resources\Images\Client_Common_Calendar_2.png" />
+    <Content Include="Resources\Images\Client_Common_Cancel.png" />
+    <Content Include="Resources\Images\Client_Common_Caption.png" />
+    <Content Include="Resources\Images\Client_Common_Caption_1.png" />
+    <Content Include="Resources\Images\Client_Common_Condition_Enable.png" />
+    <Content Include="Resources\Images\Client_Common_Create.png" />
+    <Content Include="Resources\Images\Client_Common_Current_State.png" />
+    <Content Include="Resources\Images\Client_Common_Data_Completed.png" />
+    <Content Include="Resources\Images\Client_Common_Data_Draft.png" />
+    <Content Include="Resources\Images\Client_Common_Data_General_Title.png" />
+    <Content Include="Resources\Images\Client_Common_Data_Help.png" />
+    <Content Include="Resources\Images\Client_Common_Data_Home.png" />
+    <Content Include="Resources\Images\Client_Common_Data_Home_1.png" />
+    <Content Include="Resources\Images\Client_Common_Data_Processing.png" />
+    <Content Include="Resources\Images\Client_Common_Data_Type.png" />
+    <Content Include="Resources\Images\Client_Common_Delete.png" />
+    <Content Include="Resources\Images\Client_Common_Delete_Log.png" />
+    <Content Include="Resources\Images\Client_Common_Download.png" />
+    <Content Include="Resources\Images\Client_Common_Excel.png" />
+    <Content Include="Resources\Images\Client_Common_General_Caption.png" />
+    <Content Include="Resources\Images\Client_Common_General_Intro.png" />
+    <Content Include="Resources\Images\Client_Common_General_Title.png" />
+    <Content Include="Resources\Images\Client_Common_Handle.png" />
+    <Content Include="Resources\Images\Client_Common_Help.png" />
+    <Content Include="Resources\Images\Client_Common_PDF.png" />
+    <Content Include="Resources\Images\Client_Common_Refresh.png" />
+    <Content Include="Resources\Images\Client_Common_Reject.png" />
+    <Content Include="Resources\Images\Client_Common_Search.png" />
+    <Content Include="Resources\Images\Client_Common_State.png" />
+    <Content Include="Resources\Images\Client_Common_Statistics.png" />
+    <Content Include="Resources\Images\Client_Common_Statistics_1.png" />
+    <Content Include="Resources\Images\Client_Common_Sumbit.png" />
+    <Content Include="Resources\Images\Client_Common_Table.png" />
+    <Content Include="Resources\Images\Client_Common_Time.png" />
+    <Content Include="Resources\Images\Client_Common_Title.png" />
+    <Content Include="Resources\Images\Client_Common_View.png" />
+    <Content Include="Resources\Images\Client_Common_Warning_16.png" />
+    <Content Include="Resources\Images\Client_Common_Withdraw.png" />
+    <Content Include="Resources\Images\Client_Common_Workflow.png" />
+    <Content Include="Resources\Images\Client_Common_Workflow_State.png" />
+    <Content Include="Resources\Images\Client_CurrentState_Current.png" />
+    <Content Include="Resources\Images\Client_CurrentState_History.png" />
+    <Content Include="Resources\Images\Client_InstanceState_FinalReview.png" />
+    <Content Include="Resources\Images\Client_InstanceState_InitReview.png" />
+    <None Include="Resources\Images\Client_Query_Main_Icon.png" />
+    <None Include="Resources\Images\Client_Query_Item.png" />
+    <Content Include="Resources\Images\Client_InstanceStatus_Completed.png" />
+    <Content Include="Resources\Images\Client_InstanceStatus_None.png" />
+    <Content Include="Resources\Images\Client_InstanceStatus_Review.png" />
+    <Content Include="Resources\Images\Client_InstanceStatus_ReviewAborted.png" />
+    <Content Include="Resources\Images\Client_InstanceStatus_Submitted.png" />
+    <Content Include="Resources\Images\Client_Log_Action_Add.png" />
+    <Content Include="Resources\Images\Client_Log_Action_Delete.png" />
+    <Content Include="Resources\Images\Client_Log_Action_Edit.png" />
+    <Content Include="Resources\Images\Client_Log_Action_None.png" />
+    <Content Include="Resources\Images\Client_Log_Level_Crirical.png" />
+    <Content Include="Resources\Images\Client_Log_Level_Debug.png" />
+    <Content Include="Resources\Images\Client_Log_Level_Error.png" />
+    <Content Include="Resources\Images\Client_Log_Level_Info.png" />
+    <Content Include="Resources\Images\Client_Log_Level_Notice.png" />
+    <Content Include="Resources\Images\Client_Log_Level_Warning.png" />
+    <Content Include="Resources\Images\Client_Log_Main_Icon.png" />
+    <Content Include="Resources\Images\Client_MyAuditing_Main_Icon.png" />
+    <Content Include="Resources\Images\Client_PersonalData_Main_Icon.png" />
+    <Content Include="Resources\Images\Client_Report_Instance.png" />
+    <Content Include="Resources\Images\Client_Report_Main_Icon.png" />
+    <Content Include="Resources\Images\Client_ReviewedAction_Abort.png" />
+    <Content Include="Resources\Images\Client_ReviewedAction_Pass.png" />
+    <Content Include="Resources\Images\Client_ReviewedAction_Reject.png" />
+    <Content Include="Resources\Images\Client_Software_Platform_Client_.png" />
+    <Content Include="Resources\Images\Client_Software_Platform_Management.png" />
+    <Content Include="Resources\Images\Client_Software_Platform_Server.png" />
+    <Content Include="Resources\Images\Client_Software_Platform_Web.png" />
+    <Content Include="Resources\Images\Client_Workflow_Calendar_End.png" />
+    <Content Include="Resources\Images\Client_Workflow_Calendar_Start.png" />
+    <Content Include="Resources\Images\Client_Workflow_Caption.png" />
+    <Content Include="Resources\Images\Client_Workflow_Condition_Enable.png" />
+    <Content Include="Resources\Images\Client_Workflow_Data.png" />
+    <Content Include="Resources\Images\Client_Workflow_Data_Home_1.png" />
+    <Content Include="Resources\Images\Client_Workflow_Data_Type.png" />
+    <Content Include="Resources\Images\Client_Workflow_Help.png" />
+    <Content Include="Resources\Images\Client_Workflow_State.png" />
+    <Content Include="Resources\Images\Client_Workflow_Time.png" />
+    <Content Include="Resources\Images\Client_Workflow_Title.png" />
+    <Content Include="Resources\Images\Clinet_Common_Export.png" />
+    <Content Include="Resources\Images\Clinet_Common_Next.png" />
+    <Content Include="Resources\Images\Clinet_Common_Open.png" />
+    <Content Include="Resources\Images\Clinet_Common_Previous.png" />
+    <Content Include="Resources\Images\Clinet_Common_Properties.png" />
+    <Content Include="Resources\Images\Clinet_Common_Reset.png" />
+    <Content Include="Resources\Images\Clinet_Common_Save.png" />
+    <Content Include="Resources\Images\Common_Addition_Item.png" />
+    <Content Include="Resources\Images\Common_Addition_Item_Small.png" />
+    <Content Include="Resources\Images\Common_Apply_Small.png" />
+    <Content Include="Resources\Images\Common_Boolean_No.png" />
+    <Content Include="Resources\Images\Common_Boolean_Yes.png" />
+    <Content Include="Resources\Images\Common_Business_Table.png" />
+    <Content Include="Resources\Images\Common_Button_Refresh.png" />
+    <Content Include="Resources\Images\Common_Close.png" />
+    <Content Include="Resources\Images\Common_DataFieldMode_Condition.png" />
+    <Content Include="Resources\Images\Common_DataFieldMode_Condition_Small.png" />
+    <Content Include="Resources\Images\Common_DataFieldMode_Group.png" />
+    <Content Include="Resources\Images\Common_DataFieldMode_Group_Small.png" />
+    <Content Include="Resources\Images\Common_DataFieldMode_Show.png" />
+    <Content Include="Resources\Images\Common_DataFieldMode_Show_Small.png" />
+    <Content Include="Resources\Images\Common_DataFieldRelation_BusinessAlternativeId.png" />
+    <Content Include="Resources\Images\Common_DataFieldRelation_BusinessForeignId.png" />
+    <Content Include="Resources\Images\Common_DataField_Edit.png" />
+    <Content Include="Resources\Images\Common_DataField_InVisible.png" />
+    <Content Include="Resources\Images\Common_DataField_ReadOnly.png" />
+    <Content Include="Resources\Images\Common_DataField_Visible.png" />
+    <Content Include="Resources\Images\Common_Dependent_Business_Table.png" />
+    <None Include="Resources\Images\Common_Help.png" />
+    <Content Include="Resources\Images\Common_Digit_Eight.png" />
+    <Content Include="Resources\Images\Common_Digit_Five.png" />
+    <Content Include="Resources\Images\Common_Digit_Four.png" />
+    <Content Include="Resources\Images\Common_Digit_Nine.png" />
+    <Content Include="Resources\Images\Common_Digit_One.png" />
+    <Content Include="Resources\Images\Common_Digit_Seven.png" />
+    <Content Include="Resources\Images\Common_Digit_Six.png" />
+    <Content Include="Resources\Images\Common_Digit_Three.png" />
+    <Content Include="Resources\Images\Common_Digit_Two.png" />
+    <Content Include="Resources\Images\Common_Digit_Zero.png" />
+    <Content Include="Resources\Images\Common_Direction_Down.png" />
+    <Content Include="Resources\Images\Common_Direction_None.png" />
+    <Content Include="Resources\Images\Common_Direction_Up.png" />
+    <Content Include="Resources\Images\Common_Download.png" />
+    <Content Include="Resources\Images\Common_File_Explore.png" />
+    <Content Include="Resources\Images\Common_IconType_System.png" />
+    <Content Include="Resources\Images\Common_IconType_User.png" />
+    <Content Include="Resources\Images\Common_Information_16.png" />
+    <Content Include="Resources\Images\Common_Logical_And.png" />
+    <Content Include="Resources\Images\Common_Logical_None.png" />
+    <Content Include="Resources\Images\Common_Logical_Not.png" />
+    <Content Include="Resources\Images\Common_Logical_Or.png" />
+    <Content Include="Resources\Images\Common_Mail.png" />
+    <Content Include="Resources\Images\Common_Menu_Audited.png" />
+    <Content Include="Resources\Images\Common_Menu_Business.png" />
+    <Content Include="Resources\Images\Common_Menu_Custom.png" />
+    <Content Include="Resources\Images\Common_Menu_Data.png" />
+    <Content Include="Resources\Images\Common_Menu_DataFilled.png" />
+    <Content Include="Resources\Images\Common_Menu_Query.png" />
+    <Content Include="Resources\Images\Common_Menu_Report.png" />
+    <Content Include="Resources\Images\Common_Menu_Reserved.png" />
+    <Content Include="Resources\Images\Common_Menu_Workflow.png" />
+    <Content Include="Resources\Images\Common_Move.png" />
+    <Content Include="Resources\Images\Common_Network.png" />
+    <Content Include="Resources\Images\Common_Number_Fifth.png" />
+    <Content Include="Resources\Images\Common_Number_First.png" />
+    <Content Include="Resources\Images\Common_Number_Fourth.png" />
+    <Content Include="Resources\Images\Common_Number_Second.png" />
+    <Content Include="Resources\Images\Common_Number_Third.png" />
+    <Content Include="Resources\Images\Common_Primary_Item.png" />
+    <Content Include="Resources\Images\Common_Primary_Item_Small.png" />
+    <Content Include="Resources\Images\Common_Query_Custom.png" />
+    <Content Include="Resources\Images\Common_Remove.png" />
+    <Content Include="Resources\Images\Common_Remove_1.png" />
+    <None Include="Resources\Images\Common_Status_Red.png" />
+    <Content Include="Resources\Images\Common_Report_View.png" />
+    <Content Include="Resources\Images\Common_Server_Address.png" />
+    <Content Include="Resources\Images\Common_Server_Time.png" />
+    <Content Include="Resources\Images\Common_Status_Blue.png" />
+    <Content Include="Resources\Images\Common_System.png" />
+    <Content Include="Resources\Images\Common_System_Table.png" />
+    <Content Include="Resources\Images\Common_Table.png" />
+    <Content Include="Resources\Images\Common_TableRelation_Previous.png" />
+    <Content Include="Resources\Images\Common_TableRelation_Primary.png" />
+    <Content Include="Resources\Images\Common_Table_Link_FullOuterJoin.png" />
+    <Content Include="Resources\Images\Common_Table_Link_FullOuterJoin_1.png" />
+    <Content Include="Resources\Images\Common_Table_Link_InnerJoin.png" />
+    <Content Include="Resources\Images\Common_Table_Link_InnerJoin_1.png" />
+    <Content Include="Resources\Images\Common_Table_Link_LeftOuterJoin.png" />
+    <Content Include="Resources\Images\Common_Table_Link_LeftOuterJoin_1.png" />
+    <Content Include="Resources\Images\Common_Table_Link_RightOuterJoin.png" />
+    <Content Include="Resources\Images\Common_Table_Link_RightOuterJoin_1.png" />
+    <Content Include="Resources\Images\Common_DataFieldRelation_Department.png" />
+    <Content Include="Resources\Images\Common_DataFieldRelation_UserType.png" />
+    <Content Include="Resources\Images\Common_Table_Small.png" />
+    <Content Include="Resources\Images\Common_Tree.png" />
+    <Content Include="Resources\Images\Common_Tree_Small.png" />
+    <None Include="Resources\Images\Common_Vertical_Line.png" />
+    <None Include="Resources\Images\Common_Upload_16.png" />
+    <Content Include="Resources\Images\Common_User_Actual_Name.png" />
+    <Content Include="Resources\Images\Common_User_Data.png" />
+    <Content Include="Resources\Images\Common_User_Group.png" />
+    <Content Include="Resources\Images\Common_User_Info.png" />
+    <Content Include="Resources\Images\Common_User_Name.png" />
+    <Content Include="Resources\Images\Common_User_Notice.png" />
+    <Content Include="Resources\Images\Common_User_Setting.png" />
+    <Content Include="Resources\Images\Database_DataType_Bool.png" />
+    <Content Include="Resources\Images\Database_DataType_Date.png" />
+    <Content Include="Resources\Images\Database_DataType_Decimal.png" />
+    <Content Include="Resources\Images\Database_DataType_Number.png" />
+    <Content Include="Resources\Images\Database_DataType_String.png" />
+    <Content Include="Resources\Images\DataFilled_DataFilledProperty_Business.png" />
+    <Content Include="Resources\Images\DataFilled_DataFilledProperty_Department.png" />
+    <Content Include="Resources\Images\DataFilled_DataFilledProperty_MultiUser.png" />
+    <Content Include="Resources\Images\DataFilled_DataFilledProperty_SingleUser.png" />
+    <Content Include="Resources\Images\DataFilled_DataFilledType_Common.png" />
+    <Content Include="Resources\Images\DataFilled_DataFilledType_Single.png" />
+    <Content Include="Resources\Images\DataFilled_Draft_State_Completed.png" />
+    <Content Include="Resources\Images\DataFilled_Draft_State_Empty.png" />
+    <Content Include="Resources\Images\DataFilled_Draft_State_Filling.png" />
+    <Content Include="Resources\Images\DataFilled_FormProperty_None.png" />
+    <Content Include="Resources\Images\DataFilled_FormProperty_OnlyOriginalDataCompared.png" />
+    <Content Include="Resources\Images\DataFilled_FormProperty_OnlyOriginalDataReserved.png" />
+    <Content Include="Resources\Images\DataFilled_FormProperty_OriginalDataReservedAndCompared.png" />
+    <Content Include="Resources\Images\DataFilled_ReviewedMode_None.png" />
+    <Content Include="Resources\Images\DataFilled_ReviewedMode_OnlyFinalReview.png" />
+    <Content Include="Resources\Images\DataFilled_ReviewedMode_OnlyFirstReview.png" />
+    <Content Include="Resources\Images\DataFilled_ReviewedMode_ReviewCompleted.png" />
+    <Content Include="Resources\Images\DataFilled_Step.png" />
+    <Content Include="Resources\Images\DataFilled_Tab.png" />
+    <Content Include="Resources\Images\DataRelationType_ImportAndDelete.png" />
+    <Content Include="Resources\Images\DataRelationType_OnlyDelete.png" />
+    <Content Include="Resources\Images\DataRelationType_OnlyImport.png" />
+    <Content Include="Resources\Images\Data_Backp.png" />
+    <Content Include="Resources\Images\Data_DataExchange.png" />
+    <Content Include="Resources\Images\Data_Guidance.png" />
+    <Content Include="Resources\Images\Data_Import.png" />
+    <Content Include="Resources\Images\Data_RemoteData.png" />
+    <Content Include="Resources\Images\Data_Swap.png" />
+    <Content Include="Resources\Images\Data_Verification.png" />
+    <Content Include="Resources\Images\Designer_Auditing.png" />
+    <Content Include="Resources\Images\Enum_AuthorityMethod_Append.png" />
+    <Content Include="Resources\Images\Enum_AuthorityMethod_Update.png" />
+    <Content Include="Resources\Images\Enum_DataAuthorityType_Auditing.png" />
+    <Content Include="Resources\Images\Enum_DataAuthorityType_Business.png" />
+    <Content Include="Resources\Images\Enum_DataAuthorityType_Query.png" />
+    <Content Include="Resources\Images\Enum_DataFieldCondition_Equal.png" />
+    <Content Include="Resources\Images\Enum_DataFieldCondition_Less.png" />
+    <Content Include="Resources\Images\Enum_DataFieldCondition_LessOrEqual.png" />
+    <Content Include="Resources\Images\Enum_DataFieldCondition_Like.png" />
+    <Content Include="Resources\Images\Enum_DataFieldCondition_More.png" />
+    <Content Include="Resources\Images\Enum_DataFieldCondition_MoreOrEqual.png" />
+    <Content Include="Resources\Images\Enum_DataFieldCondition_None.png" />
+    <Content Include="Resources\Images\Enum_DataFieldCondition_Not.png" />
+    <Content Include="Resources\Images\Enum_DataFieldCondition_StartWith.png" />
+    <Content Include="Resources\Images\Enum_DataInputMode_Report.png" />
+    <Content Include="Resources\Images\Enum_DataInputMode_Table.png" />
+    <Content Include="Resources\Images\Enum_MessageType_Notice.png" />
+    <Content Include="Resources\Images\Enum_MessageType_SystemMessage.png" />
+    <Content Include="Resources\Images\Enum_NextTableRelation_And.png" />
+    <Content Include="Resources\Images\Enum_NextTableRelation_None.png" />
+    <Content Include="Resources\Images\Enum_NextTableRelation_Or.png" />
+    <Content Include="Resources\Images\Enum_ReportType_Basic.png" />
+    <Content Include="Resources\Images\Enum_ReportType_Common.png" />
+    <Content Include="Resources\Images\Enum_ReportType_Statistics.png" />
+    <Content Include="Resources\Images\Enum_StructCategory_Auditing.png" />
+    <Content Include="Resources\Images\Enum_StructCategory_Common.png" />
+    <Content Include="Resources\Images\Enum_StructCategory_Liner.png" />
+    <Content Include="Resources\Images\Enum_TableJoin_FullOuterJoin.png" />
+    <Content Include="Resources\Images\Enum_TableJoin_InnerJoin.png" />
+    <Content Include="Resources\Images\Enum_TableJoin_LeftOuterJoin.png" />
+    <Content Include="Resources\Images\Enum_TableJoin_RightOuterJoin.png" />
+    <Content Include="Resources\Images\hrems.jpg" />
+    <Content Include="Resources\Images\Icons\Client_Blue.ico" />
+    <Content Include="Resources\Images\Icons\DataFilled_DataFilledList.ico" />
+    <Content Include="Resources\Images\Icons\Form_Appointment.ico" />
+    <Content Include="Resources\Images\Icons\Form_Appointment_Instance.ico" />
+    <Content Include="Resources\Images\Icons\Form_Auditing.ico" />
+    <Content Include="Resources\Images\Icons\Form_Commnet.ico" />
+    <Content Include="Resources\Images\Icons\Form_Data.ico" />
+    <Content Include="Resources\Images\Icons\Form_DataComparison.ico" />
+    <Content Include="Resources\Images\Icons\Form_DataExchange.ico" />
+    <Content Include="Resources\Images\Icons\Form_DatatCopy.ico" />
+    <Content Include="Resources\Images\Icons\Form_Info_Updated.ico" />
+    <Content Include="Resources\Images\Icons\Form_InputReport.ico" />
+    <Content Include="Resources\Images\Icons\Form_InterfaceData.ico" />
+    <Content Include="Resources\Images\Icons\Form_PersonalDataLog.ico" />
+    <Content Include="Resources\Images\Icons\Form_PersonData.ico" />
+    <Content Include="Resources\Images\Icons\Form_Print.ico" />
+    <Content Include="Resources\Images\Icons\Form_PrintText.ico" />
+    <Content Include="Resources\Images\Icons\Form_QueryManagement.ico" />
+    <Content Include="Resources\Images\Icons\Form_ReadMessage.ico" />
+    <Content Include="Resources\Images\Icons\Form_RemoteData.ico" />
+    <Content Include="Resources\Images\Icons\Form_RemoteDatabase.ico" />
+    <Content Include="Resources\Images\Icons\Form_Remote_User.ico" />
+    <Content Include="Resources\Images\Icons\Form_Report_Designer.ico" />
+    <Content Include="Resources\Images\Icons\Form_Salary.ico" />
+    <Content Include="Resources\Images\Icons\Form_Sheet.ico" />
+    <Content Include="Resources\Images\Icons\Form_Test_Mail.ico" />
+    <Content Include="Resources\Images\Icons\Form_UserData.ico" />
+    <Content Include="Resources\Images\Icons\Form_UserMessage.ico" />
+    <Content Include="Resources\Images\Icons\Form_Work.ico" />
+    <Content Include="Resources\Images\Icons\Form_Workflow_Instance.ico" />
+    <Content Include="Resources\Images\Icons\Form_AssociatedData.ico" />
+    <Content Include="Resources\Images\Icons\Form_Authority.ico" />
+    <Content Include="Resources\Images\Icons\Form_Backp.ico" />
+    <Content Include="Resources\Images\Icons\Form_BusinessList.ico" />
+    <Content Include="Resources\Images\Icons\Form_CellFormat.ico" />
+    <Content Include="Resources\Images\Icons\Form_DataFeildRelation.ico" />
+    <Content Include="Resources\Images\Icons\Form_DataFieldAuthority.ico" />
+    <Content Include="Resources\Images\Icons\Form_DataGuidance.ico" />
+    <Content Include="Resources\Images\Icons\Form_DataImporting.ico" />
+    <Content Include="Resources\Images\Icons\Form_DataTable_Mode.ico" />
+    <Content Include="Resources\Images\Icons\Form_DataTemplateTab.ico" />
+    <Content Include="Resources\Images\Icons\Form_DataTemplateTable.ico" />
+    <Content Include="Resources\Images\Icons\Form_Data_Exchange_Mode.ico" />
+    <Content Include="Resources\Images\Icons\Form_Data_Help.ico" />
+    <Content Include="Resources\Images\Icons\Form_Help.ico" />
+    <Content Include="Resources\Images\Icons\Form_Import.ico" />
+    <Content Include="Resources\Images\Icons\Form_ImportedMode.ico" />
+    <Content Include="Resources\Images\Icons\Form_Interface.ico" />
+    <Content Include="Resources\Images\Icons\Form_Mail_View.ico" />
+    <Content Include="Resources\Images\Icons\Form_Query_Custom.ico" />
+    <Content Include="Resources\Images\Icons\Form_Query_Item.ico" />
+    <Content Include="Resources\Images\Icons\Form_Query_Result.ico" />
+    <Content Include="Resources\Images\Icons\Form_Query_Setting.ico" />
+    <Content Include="Resources\Images\Icons\Form_Question.ico" />
+    <Content Include="Resources\Images\Icons\Form_Reviewers.ico" />
+    <Content Include="Resources\Images\Icons\Form_Role.ico" />
+    <Content Include="Resources\Images\Icons\Form_Role_Setting.ico" />
+    <Content Include="Resources\Images\Icons\Form_Software.ico" />
+    <Content Include="Resources\Images\Icons\Form_Swap.ico" />
+    <Content Include="Resources\Images\Icons\Form_System_Log.ico" />
+    <Content Include="Resources\Images\Icons\Form_System_Management.ico" />
+    <Content Include="Resources\Images\Icons\Form_System_Message.ico" />
+    <Content Include="Resources\Images\Icons\Form_Upgrage.ico" />
+    <Content Include="Resources\Images\Icons\Form_UserList.ico" />
+    <Content Include="Resources\Images\Icons\Form_UserName.ico" />
+    <Content Include="Resources\Images\Icons\Form_UserSetting.ico" />
+    <Content Include="Resources\Images\Icons\Form_User_Photo.ico" />
+    <Content Include="Resources\Images\Icons\Form_User_Tool.ico" />
+    <Content Include="Resources\Images\Icons\Form_Verfication.ico" />
+    <Content Include="Resources\Images\Icons\Form_WorkflowDataField.ico" />
+    <Content Include="Resources\Images\Icons\Form_Workflow_Comment.ico" />
+    <Content Include="Resources\Images\Icons\Form_Workflow_Log.ico" />
+    <Content Include="Resources\Images\Icons\Form_Workflow_Map.ico" />
+    <Content Include="Resources\Images\Icons\Mail_Delivery.ico" />
+    <Content Include="Resources\Images\ImportedMode_Append.png" />
+    <Content Include="Resources\Images\ImportedMode_NotUpdateAndInsert.png" />
+    <Content Include="Resources\Images\ImportedMode_UpdateAndInsert.png" />
+    <Content Include="Resources\Images\ImportedMode_UpdateAndNotInsert.png" />
+    <Content Include="Resources\Images\Login_Status.jpg" />
+    <Content Include="Resources\Images\Login_Status_HREMS.jpg" />
+    <Content Include="Resources\Images\Logo_Backgroud.png" />
+    <Content Include="Resources\Images\Mail_Add_Attachment.png" />
+    <Content Include="Resources\Images\Mail_Add_Role.png" />
+    <Content Include="Resources\Images\Mail_Attachment.png" />
+    <Content Include="Resources\Images\Mail_Recovery.png" />
+    <Content Include="Resources\Images\Mail_Remove_Attachment.png" />
+    <Content Include="Resources\Images\Mail_State_Completed.png" />
+    <Content Include="Resources\Images\Mail_State_New.png" />
+    <Content Include="Resources\Images\Mail_State_Open.png" />
+    <Content Include="Resources\Images\Mail_State_Pending.png" />
+    <Content Include="Resources\Images\Main_Bussiness_1.png" />
+    <Content Include="Resources\Images\Main_Bussiness_1_Big.png" />
+    <Content Include="Resources\Images\Main_Bussiness_2.png" />
+    <Content Include="Resources\Images\Main_Bussiness_2_Big.png" />
+    <Content Include="Resources\Images\Main_Personal_Data.png" />
+    <Content Include="Resources\Images\Main_Personal_Data_Big.png" />
+    <Content Include="Resources\Images\Main_Report.png" />
+    <Content Include="Resources\Images\Main_Report_Big.png" />
+    <None Include="Resources\Images\MyWork_Main_Head.png" />
+    <Content Include="Resources\Images\MyAuditingModule_Auditing_Caption.png" />
+    <Content Include="Resources\Images\MyAuditingModule_CommonAuditing.png" />
+    <Content Include="Resources\Images\MyAuditingModule_GroupAduting.png" />
+    <Content Include="Resources\Images\MyAuditingModule_InfoAllocated.png" />
+    <Content Include="Resources\Images\MyAuditingModule_InfoAllocated_Small.png" />
+    <Content Include="Resources\Images\MyAuditingModule_InfoAllocating.png" />
+    <Content Include="Resources\Images\MyAuditingModule_InfoAllocating_Small.png" />
+    <Content Include="Resources\Images\MyAuditingModule_InfoAudited.png" />
+    <Content Include="Resources\Images\MyAuditingModule_InfoAudited_Small.png" />
+    <Content Include="Resources\Images\MyAuditingModule_InfoAuditing.png" />
+    <Content Include="Resources\Images\MyAuditingModule_InfoAuditing_Small.png" />
+    <Content Include="Resources\Images\MyAuditingModule_InfoStatistics.png" />
+    <Content Include="Resources\Images\MyAuditingModule_InfoStatistics_Small.png" />
+    <Content Include="Resources\Images\MyAuditingModule_InfoUpdated.png" />
+    <Content Include="Resources\Images\MyAuditingModule_PersonalAduting.png" />
+    <Content Include="Resources\Images\MyQueryModule_Personall_Query.png" />
+    <Content Include="Resources\Images\MyQueryModule_Statistical_Query.png" />
+    <Content Include="Resources\Images\Query_Data_Clear_Option.png" />
+    <Content Include="Resources\Images\Query_Data_Export.png" />
+    <Content Include="Resources\Images\Query_Data_Preview.png" />
+    <Content Include="Resources\Images\Query_Data_Properties.png" />
+    <Content Include="Resources\Images\RecommendType_Private.png" />
+    <Content Include="Resources\Images\RecommendType_Shared.png" />
+    <Content Include="Resources\Images\SysBusiness_Salary.png" />
+    <Content Include="Resources\Images\SysBusiness_Work.png" />
+    <Content Include="Resources\Images\SysData_Data.png" />
+    <Content Include="Resources\Images\SysDesigner_InputReport.png" />
+    <Content Include="Resources\Images\SystemFormType_CommonUserInfo.png" />
+    <Content Include="Resources\Images\SystemFormType_None.png" />
+    <Content Include="Resources\Images\SystemIcon_0.png" />
+    <Content Include="Resources\Images\SystemIcon_0_Small.png" />
+    <Content Include="Resources\Images\SystemIcon_1.png" />
+    <Content Include="Resources\Images\SystemIcon_1_Small.png" />
+    <Content Include="Resources\Images\SystemIcon_2.png" />
+    <Content Include="Resources\Images\SystemIcon_2_Small.png" />
+    <Content Include="Resources\Images\SystemIcon_Data.png" />
+    <Content Include="Resources\Images\SystemIcon_Workflow.png" />
+    <Content Include="Resources\Images\System_Message_Send.png" />
+    <Content Include="Resources\Images\TableProperty_Business.png" />
+    <Content Include="Resources\Images\TableProperty_Data.png" />
+    <Content Include="Resources\Images\TableProperty_Department.png" />
+    <Content Include="Resources\Images\TableProperty_UserType.png" />
+    <Content Include="Resources\Images\Tools_Alternative_Tips.png" />
+    <Content Include="Resources\Images\Tools_Display.png" />
+    <Content Include="Resources\Images\Tools_Excel.png" />
+    <Content Include="Resources\Images\Tools_Skip.png" />
+    <Content Include="Resources\Images\Tools_Template.png" />
+    <Content Include="Resources\Images\Tools_Tips.png" />
+    <Content Include="Resources\Images\Tool_Custom_Item.png" />
+    <Content Include="Resources\Images\Tool_Custom_Item_Small.png" />
+    <Content Include="Resources\Images\Tool_Group.png" />
+    <Content Include="Resources\Images\Tool_Link.png" />
+    <Content Include="Resources\Images\Tool_New_Save.png" />
+    <Content Include="Resources\Images\Tool_New_Save_1.png" />
+    <Content Include="Resources\Images\Tool_Save_AS.png" />
+    <Content Include="Resources\Images\Tool_Text.png" />
+    <Content Include="Resources\Images\User_Compare.png" />
+    <Content Include="Resources\Images\User_Import_All.png" />
+    <Content Include="Resources\Images\User_Import_Selection.png" />
+    <Content Include="Resources\Images\User_Management_Add.png" />
+    <Content Include="Resources\Images\User_Management_Edit.png" />
+    <Content Include="Resources\Images\User_Photo.png" />
+    <Content Include="Resources\Images\User_Remote.png" />
+    <Content Include="Resources\Images\User_Tools_1.png" />
+    <Content Include="Resources\Images\User_Tools_2.png" />
+    <Content Include="Resources\Images\User_Tools_3.png" />
+    <Content Include="Resources\Images\User_Tools_4.png" />
+    <Content Include="Resources\Images\User_Tools_5.png" />
+    <Content Include="Resources\Images\User_Tools_6.png" />
+    <Content Include="Resources\Images\User_Tools_7.png" />
+    <Content Include="Resources\Images\User_Tools_8.png" />
+    <Content Include="Resources\Images\User_Tools_Id.png" />
+    <Content Include="Resources\Images\User_Tools_Identity.png" />
+    <Content Include="Resources\Images\User_Tools_Telephone.png" />
+    <Content Include="Resources\Images\User_Tool_Email.png" />
+    <Content Include="Resources\Images\User_Tool_Password.png" />
+    <Content Include="Resources\Images\User_Tool_Template.png" />
+    <Content Include="Resources\Images\User_Tool_Users.png" />
+    <Content Include="Resources\Images\User_Tool_Users_Imported.png" />
+    <Content Include="Resources\Images\User_Tool_User_Deleted.png" />
+    <Content Include="Resources\Images\User_UserMessage.png" />
+    <Content Include="Resources\Images\WorkflowHandlerMode_InTurn.png" />
+    <Content Include="Resources\Images\WorkflowHandlerMode_RemainingWorkflowsAveraged.png" />
+    <Content Include="Resources\Images\WorkflowHandlerMode_UserSelected.png" />
+    <Content Include="Resources\Images\Workflow_ChildBranch.png" />
+    <Content Include="Resources\Images\Workflow_DepBranch.png.png" />
+    <Content Include="Resources\Images\Workflow_DynamicBranch.png" />
+    <Content Include="Resources\Images\Workflow_DynamicBranchBetweenDeps.png" />
+    <Content Include="Resources\Images\Workflow_DynamicBranchInDeps.png" />
+    <Content Include="Resources\Images\Workflow_Instance_List_Archive.png" />
+    <Content Include="Resources\Images\Workflow_Instance_List_Archive_All.png" />
+    <Content Include="Resources\Images\Workflow_Instance_List_Archive_Bulk.png" />
+    <Content Include="Resources\Images\Workflow_Instance_List_Archive_Cancel.png" />
+    <Content Include="Resources\Images\Workflow_Instance_List_Archive_Cancel_All.png" />
+    <Content Include="Resources\Images\Workflow_Instance_List_Archive_Cancel_Bulk.png" />
+    <Content Include="Resources\Images\Workflow_SingleBranch.png" />
+    <Content Include="Resources\Images\Workflow_HandlerType_CustomUser.png" />
+    <Content Include="Resources\Images\Workflow_HandlerType_DepRole.png" />
+    <Content Include="Resources\Images\Workflow_HandlerType_None.png" />
+    <Content Include="Resources\Images\Workflow_HandlerType_Role.png" />
+    <Content Include="Resources\Images\Workflow_HandlerType_User.png" />
+    <Content Include="Resources\Images\Workflow_Node_End.png" />
+    <Content Include="Resources\Images\Workflow_Node_Middle.png" />
+    <Content Include="Resources\Images\Workflow_Node_Start.png" />
+    <Content Include="Resources\Images\Workflow_ParallelBranch.png" />
+    <Content Include="Resources\Images\Workflow_SelectiveBranch.png" />
+    <Content Include="Resources\Images\Workflow_Single.png" />
+    <Content Include="Resources\Images\Workflow_WorkflowType_Common.png" />
+    <Content Include="Resources\Images\Workflow_WorkflowType_Single.png" />
+    <Content Include="zh-CN\DevExpress.Charts.Designer.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Dashboard.v16.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Dashboard.v16.1.Web.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Dashboard.v16.1.Win.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Data.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.DataAccess.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.DataAccess.v16.1.UI.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Diagram.v16.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.PivotChart.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.Reports.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.Scheduler.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.Scheduler.Web.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.Security.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.Validation.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.Web.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.ExpressApp.Win.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Office.v16.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Pdf.v16.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.PivotGrid.v16.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Printing.v16.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.RichEdit.v16.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Snap.v16.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Snap.v16.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Snap.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Sparkline.v16.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Spreadsheet.v16.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Utils.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Utils.v16.1.UI.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Web.ASPxHtmlEditor.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Web.ASPxRichEdit.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Web.ASPxScheduler.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Web.ASPxSpellChecker.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Web.ASPxSpreadsheet.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Web.ASPxTreeList.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Web.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Charts.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Controls.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Core.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Docking.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.DocumentViewer.v16.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Gauges.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Grid.v16.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.LayoutControl.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.NavBar.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.PdfViewer.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Printing.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.PropertyGrid.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.ReportDesigner.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Ribbon.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.RichEdit.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Scheduler.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.SpellChecker.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpf.Spreadsheet.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.Xpo.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraBars.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraCharts.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraCharts.v16.1.Wizard.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraEditors.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraGauges.v16.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraGauges.v16.1.Presets.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraGrid.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraLayout.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraNavBar.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraPdfViewer.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraPivotGrid.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraPrinting.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraReports.v16.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraReports.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraReports.v16.1.Web.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraRichEdit.v16.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraRichEdit.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraScheduler.v16.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraScheduler.v16.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraScheduler.v16.1.Reporting.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraScheduler.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraSpellChecker.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraSpreadsheet.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraTreeList.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraVerticalGrid.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zh-CN\DevExpress.XtraWizard.v16.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Images\Account_PersonalInfo_16.png" />
+    <Content Include="Resources\Images\Account_Restart.png" />
+    <Content Include="Resources\Images\Account__Setting.png" />
+    <Content Include="Resources\Images\Association_Data_Add.png" />
+    <Content Include="Resources\Images\Association_Data_Delete.png" />
+    <Content Include="Resources\Images\Association_Data_Edit.png" />
+    <Content Include="Resources\Images\BarButtonItem_Account.png" />
+    <Content Include="Resources\Images\BarButtonItem_DataFilled.png" />
+    <Content Include="Resources\Images\BarButtonItem_Exit.png" />
+    <Content Include="Resources\Images\BarButtonItem_Mail.png" />
+    <Content Include="Resources\Images\BarButtonItem_Query.png" />
+    <Content Include="Resources\Images\BarButtonItem_Report.png" />
+    <Content Include="Resources\Images\BarButtonItem_View.png" />
+    <Content Include="Resources\Images\BarButtonItem_Workflow.png" />
+    <Content Include="Resources\Images\Business_Association.png" />
+    <Content Include="Resources\Images\Business_Data.png" />
+    <Content Include="Resources\Images\Business_DataFilled.png" />
+    <Content Include="Resources\Images\Business_Enum.png" />
+    <Content Include="Resources\Images\Business_Query.png" />
+    <Content Include="Resources\Images\Business_Report.png" />
+    <Content Include="Resources\Images\Business_Table.png" />
+    <None Include="Resources\Images\Button_Query.png" />
+    <Content Include="Resources\Images\Business_Transaction.png" />
+    <Content Include="Resources\Images\Business_View.png" />
+    <Content Include="Resources\Images\Business_Workflow.png" />
+    <None Include="Resources\Images\Buttom_Quer_Small.png" />
+    <Content Include="Resources\Images\Button_Confirm.png" />
+    <Content Include="Resources\Images\Button_Remove.png" />
+    <None Include="Resources\Images\Button_Remove_Small.png" />
+    <Content Include="Resources\Images\Common_Account.png" />
+    <Content Include="Resources\Images\Common_Addtional_Table.png" />
+    <Content Include="Resources\Images\Common_Arrow_Bottom.png" />
+    <Content Include="Resources\Images\Common_Arrow_Bottom_Big.png" />
+    <Content Include="Resources\Images\Common_Arrow_Down.png" />
+    <Content Include="Resources\Images\Common_Arrow_Down_Big.png" />
+    <Content Include="Resources\Images\Common_Arrow_Top.png" />
+    <Content Include="Resources\Images\Common_Arrow_Top_Big.png" />
+    <Content Include="Resources\Images\Common_Arrow_Up.png" />
+    <Content Include="Resources\Images\Common_Arrow_Up_Big.png" />
+    <Content Include="Resources\Images\Common_Assistant_Table.png" />
+    <None Include="Resources\Images\Common_Cancel_16.png" />
+    <Content Include="Resources\Images\Common_Close_1.png" />
+    <Content Include="Resources\Images\Common_Close_2.png" />
+    <None Include="Resources\Images\Common_Confirm_16.png" />
+    <None Include="Resources\Images\Common_Data.png" />
+    <Content Include="Resources\Images\Common_Default_Tool_PNG.png" />
+    <Content Include="Resources\Images\Common_Drodownlist_Eight.png" />
+    <Content Include="Resources\Images\Common_Drodownlist_Five.png" />
+    <Content Include="Resources\Images\Common_Drodownlist_Four.png" />
+    <Content Include="Resources\Images\Common_Drodownlist_Nine.png" />
+    <Content Include="Resources\Images\Common_Drodownlist_One.png" />
+    <Content Include="Resources\Images\Common_Drodownlist_Seven.png" />
+    <Content Include="Resources\Images\Common_Drodownlist_Six.png" />
+    <Content Include="Resources\Images\Common_Drodownlist_Ten.png" />
+    <Content Include="Resources\Images\Common_Drodownlist_Three.png" />
+    <Content Include="Resources\Images\Common_Drodownlist_Two.png" />
+    <Content Include="Resources\Images\Common_Error.png" />
+    <None Include="Resources\Images\Common_Information.png" />
+    <None Include="Resources\Images\Common_List.png" />
+    <Content Include="Resources\Images\Common_Nodes_Down.png" />
+    <Content Include="Resources\Images\Common_Nodes_Selected.png" />
+    <Content Include="Resources\Images\Common_Nodes_Up.png" />
+    <None Include="Resources\Images\Common_Photo.png" />
+    <None Include="Resources\Images\Common_Photo_16.png" />
+    <Content Include="Resources\Images\Common_Primary_Table.png" />
+    <None Include="Resources\Images\Common_Query.png" />
+    <None Include="Resources\Images\Common_Role.png" />
+    <Content Include="Resources\Images\Common_DataFieldRelation_Business.png" />
+    <Content Include="Resources\Images\Common_DataFieldRelation_User.png" />
+    <Content Include="Resources\Images\Control_Identity_One.jpg" />
+    <Content Include="Resources\Images\Control_Identity_Other.png" />
+    <Content Include="Resources\Images\Control_Identity_Two.jpg" />
+    <Content Include="Resources\Images\Control_UserProperty_Five.png" />
+    <Content Include="Resources\Images\Control_UserProperty_Four.png" />
+    <Content Include="Resources\Images\Control_UserProperty_One.png" />
+    <Content Include="Resources\Images\Control_UserProperty_Three.png" />
+    <Content Include="Resources\Images\Control_UserProperty_Two.png" />
+    <Content Include="Resources\Images\Database_DataType_1.png" />
+    <Content Include="Resources\Images\Database_DataType_10.png" />
+    <Content Include="Resources\Images\Database_DataType_11.png" />
+    <Content Include="Resources\Images\Database_DataType_12.png" />
+    <Content Include="Resources\Images\Database_DataType_13.png" />
+    <Content Include="Resources\Images\Database_DataType_14.png" />
+    <Content Include="Resources\Images\Database_DataType_15.png" />
+    <Content Include="Resources\Images\Database_DataType_16.png" />
+    <Content Include="Resources\Images\Database_DataType_2.png" />
+    <Content Include="Resources\Images\Database_DataType_3.png" />
+    <Content Include="Resources\Images\Database_DataType_4.png" />
+    <Content Include="Resources\Images\Database_DataType_5.png" />
+    <Content Include="Resources\Images\Database_DataType_6.png" />
+    <Content Include="Resources\Images\Database_DataType_7.png" />
+    <Content Include="Resources\Images\Database_DataType_8.png" />
+    <Content Include="Resources\Images\Database_DataType_9.png" />
+    <Content Include="Resources\Images\Database_Node_0.png" />
+    <Content Include="Resources\Images\Database_Node_1.png" />
+    <Content Include="Resources\Images\Database_Node_2.png" />
+    <Content Include="Resources\Images\Database_Node_3.png" />
+    <Content Include="Resources\Images\Form_Enum.png" />
+    <Content Include="Resources\Images\Form_MultiSelectedItems.png" />
+    <Content Include="Resources\Images\Icons\Business_Data.ico" />
+    <Content Include="Resources\Images\Icons\Business_Transaction.ico" />
+    <Content Include="Resources\Images\Icons\Common_Account.ico" />
+    <Content Include="Resources\Images\Icons\Common_Error_Tip.ico" />
+    <Content Include="Resources\Images\Common_Exception.png" />
+    <Content Include="Resources\Images\Common_Save.ico" />
+    <Content Include="Resources\Images\Common_Waring.png" />
+    <Content Include="Resources\Images\Icons\Common_Error.ico" />
+    <Content Include="Resources\Images\Common_Error_Tip.png" />
+    <Content Include="Resources\Images\Icons\Common_Exception.ico" />
+    <Content Include="Resources\Images\Icons\Common_Photo.ico" />
+    <Content Include="Resources\Images\Icons\Common_Save.ico" />
+    <Content Include="Resources\Images\Icons\Common_Waring.ico" />
+    <Content Include="Resources\Images\Icons\Forms_DataFieldList.ico" />
+    <Content Include="Resources\Images\Icons\Form_Association.ico" />
+    <Content Include="Resources\Images\Icons\Form_Association_Data.ico" />
+    <Content Include="Resources\Images\Icons\Form_Database.ico" />
+    <Content Include="Resources\Images\Icons\Form_DataFieldMirror.ico" />
+    <Content Include="Resources\Images\Icons\Form_DataFilled.ico" />
+    <Content Include="Resources\Images\Icons\Form_Email.ico" />
+    <Content Include="Resources\Images\Icons\Form_Enum.ico" />
+    <Content Include="Resources\Images\Icons\Form_Enum_List.ico" />
+    <Content Include="Resources\Images\Icons\Form_Expression.ico" />
+    <Content Include="Resources\Images\Icons\Form_MultiSelectedItems.ico" />
+    <Content Include="Resources\Images\Icons\Form_Query.ico" />
+    <Content Include="Resources\Images\Icons\Form_Report.ico" />
+    <Content Include="Resources\Images\Icons\Form_SingleUser.ico" />
+    <Content Include="Resources\Images\Icons\Form_System_Department.ico" />
+    <Content Include="Resources\Images\Icons\Form_User.ico" />
+    <Content Include="Resources\Images\Icons\Form_UserType.ico" />
+    <Content Include="Resources\Images\Icons\Form_View.ico" />
+    <Content Include="Resources\Images\Icons\Form_Workflow.ico" />
+    <Content Include="Resources\Images\Icons\Form_WriteMail.ico" />
+    <Content Include="Resources\Images\Icons\Main_Audit.ico" />
+    <Content Include="Resources\Images\Icons\Main_Message_Alter.ico" />
+    <Content Include="Resources\Images\Icons\Main_Message_Mail.ico" />
+    <Content Include="Resources\Images\Icons\Main_Message_Notice.ico" />
+    <Content Include="Resources\Images\Icons\System_Authority.ico" />
+    <Content Include="Resources\Images\Icons\Tools_Recycle_Bin.ico" />
+    <Content Include="Resources\Images\Icons\Tool_Advance_Setting.ico" />
+    <Content Include="Resources\Images\Icons\Tool_Warning.ico" />
+    <Content Include="Resources\Images\Login_Default_User.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\Icons\Login_User_Setting.ico" />
+    <None Include="Resources\Images\Login_NetworkSetting.jpg" />
+    <None Include="Resources\Images\Login_UserSetting.jpg" />
+    <None Include="Resources\Images\Mail_MyMail.png" />
+    <Content Include="Resources\Images\Mail_Attach_No.png" />
+    <Content Include="Resources\Images\Mail_Attach_Yes.png" />
+    <Content Include="Resources\Images\Mail_Draft.png" />
+    <Content Include="Resources\Images\Mail_InBox.png" />
+    <Content Include="Resources\Images\Mail_Mark.png" />
+    <Content Include="Resources\Images\Mail_Mode_Blind.png" />
+    <Content Include="Resources\Images\Mail_Mode_Copy.png" />
+    <Content Include="Resources\Images\Mail_Mode_Delivery.png" />
+    <Content Include="Resources\Images\Mail_Move.png" />
+    <Content Include="Resources\Images\Mail_New.png" />
+    <Content Include="Resources\Images\Mail_Old.png" />
+    <Content Include="Resources\Images\Mail_OutBox.png" />
+    <Content Include="Resources\Images\Mail_Priority_Critical.png" />
+    <Content Include="Resources\Images\Mail_Priority_Importance.png" />
+    <Content Include="Resources\Images\Mail_Priority_Normal.png" />
+    <Content Include="Resources\Images\Mail_Recycle.png" />
+    <Content Include="Resources\Images\Mail_Recycle_Bin.png" />
+    <Content Include="Resources\Images\Mail_Refresh.png" />
+    <Content Include="Resources\Images\Mail_Reply.png" />
+    <None Include="Resources\Images\Mail_Setting.png" />
+    <Content Include="Resources\Images\Mail_Transfer.png" />
+    <Content Include="Resources\Images\Mail_Write.png" />
+    <Content Include="Resources\Images\Main_Audit.png" />
+    <Content Include="Resources\Images\Main_Audit_Big.png" />
+    <Content Include="Resources\Images\Main_Message_Alter.png" />
+    <Content Include="Resources\Images\Main_Message_Mail.png" />
+    <Content Include="Resources\Images\Main_Message_Notice.png" />
+    <Content Include="Resources\Images\Main_MyReminder.png" />
+    <Content Include="Resources\Images\Main_MyReminder_Big.png" />
+    <Content Include="Resources\Images\System_Authority.png" />
+    <Content Include="Resources\Images\System_DataFieldMirror.png" />
+    <Content Include="Resources\Images\System_Department.png" />
+    <Content Include="Resources\Images\System_Log.png" />
+    <Content Include="Resources\Images\System_Maintain.png" />
+    <Content Include="Resources\Images\System_Message.png" />
+    <Content Include="Resources\Images\System_Role.png" />
+    <Content Include="Resources\Images\System_User.png" />
+    <Content Include="Resources\Images\System_UserType.png" />
+    <None Include="Resources\Images\Tip_Message.png" />
+    <Content Include="Resources\Images\Tip_Information.png" />
+    <Content Include="Resources\Images\Tools_Add.png" />
+    <Content Include="Resources\Images\Tools_Check.png" />
+    <Content Include="Resources\Images\Tools_Delete.png" />
+    <Content Include="Resources\Images\Tools_Edit.png" />
+    <Content Include="Resources\Images\Tools_Import.png" />
+    <Content Include="Resources\Images\Tools_New.png" />
+    <Content Include="Resources\Images\Tools_Recycle_Bin.png" />
+    <Content Include="Resources\Images\Tools_Remove.png" />
+    <Content Include="Resources\Images\Tools_Save.png" />
+    <Content Include="Resources\Images\Tool_Advance_Setting.png" />
+    <None Include="Resources\Images\Tool_Tree.png" />
+    <None Include="Resources\Images\Tool_Detail.png" />
+    <None Include="Resources\Images\Tool_Waring.png" />
+    <Content Include="Resources\Images\Tools_Cancel.png" />
+    <Content Include="Resources\Images\Tools_Clear.png" />
+    <Content Include="Resources\Images\Tool_Confirm.png" />
+    <Content Include="Resources\Images\User_BacthUnlock.png" />
+    <Content Include="Resources\Images\User_Create.png" />
+    <Content Include="Resources\Images\User_Delete.png" />
+    <Content Include="Resources\Images\User_Delete_Batch.png" />
+    <Content Include="Resources\Images\User_Delete_Only.png" />
+    <Content Include="Resources\Images\User_Edit.png" />
+    <Content Include="Resources\Images\User_Exchange.png" />
+    <Content Include="Resources\Images\User_Find.png" />
+    <Content Include="Resources\Images\User_Freeze.png" />
+    <Content Include="Resources\Images\User_Freeze_Batch.png" />
+    <Content Include="Resources\Images\User_Freeze_Only.png" />
+    <Content Include="Resources\Images\User_Unlock.png" />
+    <None Include="Resources\Images\Login_Banner.jpg" />
+    <Content Include="Resources\Images\Login_Setting.png" />
+    <None Include="Resources\Images\Main_Backgroup.jpg" />
+    <Content Include="Resources\Images\Main_Backgroup_Alternative.jpg" />
+    <Content Include="Resources\Images\Main_Business.png" />
+    <Content Include="Resources\Images\Main_Business_Big.png" />
+    <Content Include="Resources\Images\Main_HomePage.png" />
+    <Content Include="Resources\Images\Main_HomePage_Big.png" />
+    <Content Include="Resources\Images\Main_MyWork.png" />
+    <Content Include="Resources\Images\Main_MyWork_Big.png" />
+    <Content Include="Resources\Images\Main_Query_User.png" />
+    <Content Include="Resources\Images\Main_Query_User_Big.png" />
+    <Content Include="Resources\Images\Main_State_Busy.png" />
+    <Content Include="Resources\Images\Main_State_DoNotDisturb.png" />
+    <Content Include="Resources\Images\Main_State_Hidden.png" />
+    <Content Include="Resources\Images\Main_State_Leave.png" />
+    <Content Include="Resources\Images\Main_State_Online.png" />
+    <Content Include="Resources\Images\Main_UserData.png" />
+    <Content Include="Resources\Images\Main_UserData_Big.png" />
+    <Content Include="Resources\Images\MyWorkHalt.png" />
+    <Content Include="Resources\Images\MyWork_Processed.png" />
+    <Content Include="Resources\Images\MyWork_Processing.png" />
+    <Content Include="Resources\Images\MyWork_Sumbit.png" />
+    <Content Include="Resources\Images\WorkflowDesigner.ico" />
+    <Content Include="Resources\Images\WorkflowDesigner_PolicyNode.ico" />
+    <Content Include="Resources\Images\WorkflowDesigner_PorcessNode.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SysAccount\" />
+    <Folder Include="SysArchitecture\" />
+    <Folder Include="SysBusiness\" />
+    <Folder Include="SysData\" />
+    <Folder Include="SysDesigner\" />
+    <Folder Include="SysHelp\" />
+    <Folder Include="SysManagement\" />
+    <Folder Include="SysProcessing\" />
+    <Folder Include="SysSetting\" />
+    <Folder Include="UserAuditing\" />
+    <Folder Include="UserBusiness\" />
+    <Folder Include="UserCombination\" />
+    <Folder Include="UserData\" />
+    <Folder Include="UserForm\" />
+    <Folder Include="UserHelp\" />
+    <Folder Include="UserHomepage\" />
+    <Folder Include="UserQuery\" />
+    <Folder Include="UserReport\" />
+    <Folder Include="UserSystem\" />
+    <Folder Include="UserWorkflow\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

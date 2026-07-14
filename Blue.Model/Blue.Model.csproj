@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A49EC00A-F9BD-4F53-9A88-BED92D768003}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Blue.Model</RootNamespace>
+    <AssemblyName>Blue.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>BlueModel.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Enterprise Library 6\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation">
+      <HintPath>C:\Program Files\Enterprise Library 6\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessDesignerModule\AppointmentAndDataFieldInfo.cs" />
+    <Compile Include="BusinessDesignerModule\AppointmentBusinessInfo.cs" />
+    <Compile Include="BusinessDesignerModule\CellStyleInfo.cs" />
+    <Compile Include="BusinessDesignerModule\CustomCellInfo.cs" />
+    <Compile Include="BusinessDesignerModule\CustomSheetInfo.cs" />
+    <Compile Include="BusinessDesignerModule\CustomSnapshotInfo.cs" />
+    <Compile Include="BusinessDesignerModule\DataAuditingAndDataFieldInfo.cs" />
+    <Compile Include="BusinessDesignerModule\DataAuditingInfo.cs" />
+    <Compile Include="BusinessDesignerModule\DataAuditingLogInfo.cs" />
+    <Compile Include="BusinessDesignerModule\DataAuditingRelationInfo.cs" />
+    <Compile Include="BusinessDesignerModule\DataAuditingStepInfo.cs" />
+    <Compile Include="BusinessDesignerModule\RecordAuditingInfo.cs" />
+    <Compile Include="BusinessModule\AppointmentAndDataFieldInfo.cs" />
+    <Compile Include="BusinessModule\AppointmentInstanceInfo.cs" />
+    <Compile Include="BusinessModule\AssociatedDataFieldInfo.cs" />
+    <Compile Include="BusinessModule\CombinedDataFieldInfo.cs" />
+    <Compile Include="BusinessModule\CombinedTableInfo.cs" />
+    <Compile Include="BusinessModule\CombinedTableRelationInfo.cs" />
+    <Compile Include="BusinessModule\CustomAssociationInfo.cs" />
+    <Compile Include="BusinessModule\CustomFormAndDataFieldInfo.cs" />
+    <Compile Include="BusinessModule\CustomPrintAndDataFieldInfo.cs" />
+    <Compile Include="BusinessModule\CustomPrintInfo.cs" />
+    <Compile Include="BusinessModule\CustomSectionInfo.cs" />
+    <Compile Include="BusinessModule\CustomWorkflowMapInfo.cs" />
+    <Compile Include="BusinessModule\DataFieldRelationshipInfo.cs" />
+    <Compile Include="BusinessModule\ExtendedCustomDataFieldInfo.cs" />
+    <Compile Include="BusinessModule\ExtendedCustomBusinessInfo.cs" />
+    <Compile Include="BusinessModule\CustomBusinessInfo.cs" />
+    <Compile Include="BusinessModule\CustomCategoryInfo.cs" />
+    <Compile Include="BusinessModule\CustomDataInfo.cs" />
+    <Compile Include="BusinessModule\CustomEnumInfo.cs" />
+    <Compile Include="BusinessModule\CustomFormInfo.cs" />
+    <Compile Include="BusinessModule\CustomGroupInfo.cs" />
+    <Compile Include="BusinessModule\CustomMenuInfo.cs" />
+    <Compile Include="BusinessModule\CustomQueyAndDataFieldInfo.cs" />
+    <Compile Include="BusinessModule\CustomQueyInfo.cs" />
+    <Compile Include="BusinessDesignerModule\CustomReportInfo.cs" />
+    <Compile Include="BusinessModule\QueryAndDataFieldInfo.cs" />
+    <Compile Include="BusinessModule\PrintRecordInfo.cs" />
+    <Compile Include="BusinessModule\UserQueryInfo.cs" />
+    <Compile Include="BusinessModule\WorkflowInstanceDetailInfo.cs" />
+    <Compile Include="BusinessModule\WorkflowInstanceLogAndStepInfo.cs" />
+    <Compile Include="BusinessModule\WorkflowInstanceLogInfo.cs" />
+    <Compile Include="BusinessModule\WorkflowInstanceStepInfo.cs" />
+    <Compile Include="BusinessModule\WorkflowProcessAndDataFieldInfo.cs" />
+    <Compile Include="DataConvertionModule\DataFieldRelationInfo.cs" />
+    <Compile Include="DataConvertionModule\DataFieldRelationshipInfo.cs" />
+    <Compile Include="DataConvertionModule\DataRelationInfo.cs" />
+    <Compile Include="DataConvertionModule\RemoteDataAndFieldInfo.cs" />
+    <Compile Include="DataConvertionModule\RemoteDataAndTableInfo.cs" />
+    <Compile Include="DataConvertionModule\RemoteDataInfo.cs" />
+    <Compile Include="DataFieldComparer.cs" />
+    <Compile Include="DataFilledModule\BusinessInstanceInfo.cs" />
+    <Compile Include="DataFilledModule\BusinessInstanceStepInfo.cs" />
+    <Compile Include="DataFilledModule\InstanceAndUserScopeInfo.cs" />
+    <Compile Include="SystemModule\CustomInterfaceAndDepInfo.cs" />
+    <Compile Include="SystemModule\CustomInterfaceAndUserTypeInfo.cs" />
+    <Compile Include="SystemModule\CustomInterfaceInfo.cs" />
+    <Compile Include="SystemModule\CustomRoleInfo.cs" />
+    <Compile Include="BusinessModule\CustomViewAndDataFieldInfo.cs" />
+    <Compile Include="BusinessModule\CustomViewAndTableInfo.cs" />
+    <Compile Include="BusinessModule\CustomViewInfo.cs" />
+    <Compile Include="BusinessModule\CustomWorkflowInfo.cs" />
+    <Compile Include="BusinessModule\CustomWorkflowInstanceInfo.cs" />
+    <Compile Include="BusinessModule\CustomWorkflowProcessInfo.cs" />
+    <Compile Include="SystemModule\MessageAndRoleInfo.cs" />
+    <Compile Include="SystemModule\RoleAndBusinessInfo.cs" />
+    <Compile Include="SystemModule\RoleAndDataFieldInfo.cs" />
+    <Compile Include="SystemModule\RoleAndPrintInfo.cs" />
+    <Compile Include="SystemModule\RoleAndTableInfo.cs" />
+    <Compile Include="GeneralAffairModule\PriavteAttachmentInfo.cs" />
+    <Compile Include="GeneralAffairModule\PrivateMailInfo.cs" />
+    <Compile Include="GeneralAffairModule\UserAndMailInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BusinessModule\CustomDatabaseInfo.cs" />
+    <Compile Include="BusinessModule\CustomDataFieldInfo.cs" />
+    <Compile Include="SystemModule\CustomDepartmentInfo.cs" />
+    <Compile Include="BusinessModule\CustomExpressionInfo.cs" />
+    <Compile Include="BusinessModule\CustomTableInfo.cs" />
+    <Compile Include="SystemModule\DepartmentScopeInfo.cs" />
+    <Compile Include="SystemModule\RoleAndUserInfo.cs" />
+    <Compile Include="SystemModule\SystemConfigInfo.cs" />
+    <Compile Include="SystemModule\UserLogInfo.cs" />
+    <Compile Include="SystemModule\UserMessageInfo.cs" />
+    <Compile Include="SystemModule\UserTypeInfo.cs" />
+    <Compile Include="SystemModule\UserTypeScopeInfo.cs" />
+    <Compile Include="UserModule\UserAccountInfo.cs" />
+    <Compile Include="UserModule\UserConfigInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="BlueModel.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppFramework.Core\AppFramework.Core.csproj">
+      <Project>{2b0ae85c-4142-42dc-b97e-5d5e9557a9e6}</Project>
+      <Name>AppFramework.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
