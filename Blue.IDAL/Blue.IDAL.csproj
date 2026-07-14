@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7548BD25-B680-4BA5-BEE6-4682746D1782}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Blue.IDAL</RootNamespace>
+    <AssemblyName>Blue.IDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>BlueIDAL.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessDesignerModule\IAppointmentAndDataField.cs" />
+    <Compile Include="BusinessDesignerModule\IAppointmentBusiness.cs" />
+    <Compile Include="BusinessDesignerModule\ICellStyle.cs" />
+    <Compile Include="BusinessDesignerModule\ICustomCell.cs" />
+    <Compile Include="BusinessDesignerModule\ICustomSheet.cs" />
+    <Compile Include="BusinessDesignerModule\ICustomSnapshot.cs" />
+    <Compile Include="BusinessDesignerModule\IDataAuditing.cs" />
+    <Compile Include="BusinessDesignerModule\IDataAuditingAndDataField.cs" />
+    <Compile Include="BusinessDesignerModule\IDataAuditingLog.cs" />
+    <Compile Include="BusinessDesignerModule\IDataAuditingStep.cs" />
+    <Compile Include="BusinessModule\IAppointmentAndDataField.cs" />
+    <Compile Include="BusinessModule\IAppointmentInstance.cs" />
+    <Compile Include="BusinessModule\IAssociatedDataField.cs" />
+    <Compile Include="BusinessModule\ICombinedDataField.cs" />
+    <Compile Include="BusinessModule\ICombinedTable.cs" />
+    <Compile Include="BusinessModule\ICombinedTableRelation.cs" />
+    <Compile Include="BusinessModule\ICustomAssociation.cs" />
+    <Compile Include="BusinessModule\ICustomBusiness.cs" />
+    <Compile Include="BusinessModule\ICustomCategory.cs" />
+    <Compile Include="BusinessModule\ICustomData.cs" />
+    <Compile Include="BusinessModule\ICustomEnum.cs" />
+    <Compile Include="BusinessModule\ICustomForm.cs" />
+    <Compile Include="BusinessModule\ICustomGroup.cs" />
+    <Compile Include="BusinessModule\IDataBussiness.cs" />
+    <Compile Include="BusinessModule\IQueryAndDataField.cs" />
+    <Compile Include="BusinessModule\IPrintRecord.cs" />
+    <Compile Include="BusinessModule\IUserQuery.cs" />
+    <Compile Include="BusinessModule\IWorkflowInstanceDetail.cs" />
+    <Compile Include="DataConvertionModule\IRemoteData.cs" />
+    <Compile Include="DataConvertionModule\IRemoteDataAndField.cs" />
+    <Compile Include="SystemModule\ICustomInterface.cs" />
+    <Compile Include="SystemModule\ICustomInterfaceAndDep.cs" />
+    <Compile Include="SystemModule\ICustomInterfaceAndUserType.cs" />
+    <Compile Include="BusinessModule\ICustomMenu.cs" />
+    <Compile Include="BusinessModule\ICustomPrint.cs" />
+    <Compile Include="BusinessModule\ICustomPrintAndDataField.cs" />
+    <Compile Include="BusinessModule\ICustomQuey.cs" />
+    <Compile Include="BusinessModule\ICustomQueyAndDataField.cs" />
+    <Compile Include="BusinessDesignerModule\ICustomReport.cs" />
+    <Compile Include="BusinessModule\ICustomSection.cs" />
+    <Compile Include="BusinessModule\ICustomWorkflowMap.cs" />
+    <Compile Include="BusinessModule\IDataFieldRelationship.cs" />
+    <Compile Include="BusinessModule\IWorkflowInstanceLog.cs" />
+    <Compile Include="BusinessModule\IWorkflowInstanceLogAndStep.cs" />
+    <Compile Include="BusinessModule\IWorkflowInstanceStep.cs" />
+    <Compile Include="DataConvertionModule\IDataFieldRelation.cs" />
+    <Compile Include="DataConvertionModule\IDataRelation.cs" />
+    <Compile Include="DataFilledModule\IBusinessInstance.cs" />
+    <Compile Include="DataFilledModule\IBusinessInstanceStep.cs" />
+    <Compile Include="DataFilledModule\IInstanceAndUserScope.cs" />
+    <Compile Include="SystemModule\ICustomRole.cs" />
+    <Compile Include="BusinessModule\ICustomView.cs" />
+    <Compile Include="BusinessModule\ICustomViewAndDataField.cs" />
+    <Compile Include="BusinessModule\ICustomViewAndTable.cs" />
+    <Compile Include="BusinessModule\ICustomWorkflow.cs" />
+    <Compile Include="BusinessModule\ICustomWorkflowDirection.cs" />
+    <Compile Include="BusinessModule\ICustomWorkflowInstance.cs" />
+    <Compile Include="BusinessModule\ICustomWorkflowProcess.cs" />
+    <Compile Include="SystemModule\IMessageAndRole.cs" />
+    <Compile Include="SystemModule\IRoleAndBusiness.cs" />
+    <Compile Include="SystemModule\IRoleAndDataField.cs" />
+    <Compile Include="SystemModule\IRoleAndPrint.cs" />
+    <Compile Include="SystemModule\IRoleAndTable.cs" />
+    <Compile Include="BusinessModule\IWorkflowProcessAndDataField.cs" />
+    <Compile Include="GeneralAffairModule\IPriavteAttachment.cs" />
+    <Compile Include="GeneralAffairModule\IPrivateMail.cs" />
+    <Compile Include="GeneralAffairModule\IUserAndMail.cs" />
+    <Compile Include="ICustomBusinessData.cs" />
+    <Compile Include="IDatabaseProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BusinessModule\ICustomDatabase.cs" />
+    <Compile Include="BusinessModule\ICustomDataField.cs" />
+    <Compile Include="SystemModule\ICustomDepartment.cs" />
+    <Compile Include="BusinessModule\ICustomExpression.cs" />
+    <Compile Include="BusinessModule\ICustomTable.cs" />
+    <Compile Include="SystemModule\IDepartmentScope.cs" />
+    <Compile Include="SystemModule\IRoleAndUser.cs" />
+    <Compile Include="SystemModule\ISystemConfig.cs" />
+    <Compile Include="SystemModule\IUserLog.cs" />
+    <Compile Include="SystemModule\IUserMessage.cs" />
+    <Compile Include="SystemModule\IUserType.cs" />
+    <Compile Include="SystemModule\IUserTypeScope.cs" />
+    <Compile Include="UserModule\IUserAccount.cs" />
+    <Compile Include="UserModule\IUserConfig.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="BlueIDAL.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppFramework.Core\AppFramework.Core.csproj">
+      <Project>{2b0ae85c-4142-42dc-b97e-5d5e9557a9e6}</Project>
+      <Name>AppFramework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppFramework.Reference\AppFramework.Reference.csproj">
+      <Project>{a903b873-5480-48a1-bca3-86f45c9640dc}</Project>
+      <Name>AppFramework.Reference</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blue.Model\Blue.Model.csproj">
+      <Project>{a49ec00a-f9bd-4f53-9a88-bed92d768003}</Project>
+      <Name>Blue.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SysAccount\" />
+    <Folder Include="SysArchitecture\" />
+    <Folder Include="SysBusiness\" />
+    <Folder Include="SysData\" />
+    <Folder Include="SysDesigner\" />
+    <Folder Include="SysHelp\" />
+    <Folder Include="SysManagement\" />
+    <Folder Include="SysProcessing\" />
+    <Folder Include="SysSetting\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

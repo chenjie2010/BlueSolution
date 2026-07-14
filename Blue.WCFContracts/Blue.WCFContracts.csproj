@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2269095B-F5F9-4F05-B52D-AD7DDEBB4CFF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Blue.WCFContracts</RootNamespace>
+    <AssemblyName>Blue.WCFContracts</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Blue.WCFContracts.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessDesignerModule\IAppointmentBusinessContract.cs" />
+    <Compile Include="BusinessDesignerModule\ICustomCellContract.cs" />
+    <Compile Include="BusinessDesignerModule\ICustomSheetContract.cs" />
+    <Compile Include="BusinessDesignerModule\ICustomSnapshotContract.cs" />
+    <Compile Include="BusinessDesignerModule\IDataAuditingContract.cs" />
+    <Compile Include="BusinessDesignerModule\IDataAuditingLogContract.cs" />
+    <Compile Include="BusinessDesignerModule\IDataAuditingStepContract.cs" />
+    <Compile Include="BusinessModule\IAppointmentInstanceContract.cs" />
+    <Compile Include="BusinessModule\IAssociatedDataFieldContract.cs" />
+    <Compile Include="BusinessModule\ICombinedTableContract.cs" />
+    <Compile Include="BusinessModule\ICustomAssociationContract.cs" />
+    <Compile Include="BusinessModule\ICustomBusinessContract.cs" />
+    <Compile Include="BusinessModule\ICustomCategoryContract.cs" />
+    <Compile Include="BusinessModule\ICustomDataContract.cs" />
+    <Compile Include="BusinessModule\ICustomEnumContract.cs" />
+    <Compile Include="BusinessModule\ICustomFormContract.cs" />
+    <Compile Include="BusinessModule\ICustomGroupContract.cs" />
+    <Compile Include="BusinessModule\ICustomMenuContract.cs" />
+    <Compile Include="BusinessModule\ICustomPrintContract.cs" />
+    <Compile Include="BusinessModule\ICustomQueyContract.cs" />
+    <Compile Include="BusinessDesignerModule\ICustomReportContract.cs" />
+    <Compile Include="BusinessModule\ICustomSectionContract.cs" />
+    <Compile Include="BusinessModule\IDataBussinessContract.cs" />
+    <Compile Include="BusinessModule\IUserQueryContract.cs" />
+    <Compile Include="BusinessModule\IWorkflowInstanceStepContract.cs" />
+    <Compile Include="DataConvertionModule\IDataRelationContract.cs" />
+    <Compile Include="DataConvertionModule\IRemoteDataContract.cs" />
+    <Compile Include="DataFilledModule\IBusinessInstanceContract.cs" />
+    <Compile Include="IRemoteServerContract.cs" />
+    <Compile Include="SystemModule\ICustomInterfaceContract.cs" />
+    <Compile Include="SystemModule\ICustomRoleContract.cs" />
+    <Compile Include="BusinessModule\ICustomViewContract.cs" />
+    <Compile Include="BusinessModule\ICustomWorkflowContract.cs" />
+    <Compile Include="BusinessModule\ICustomWorkflowInstanceContract.cs" />
+    <Compile Include="BusinessModule\ICustomWorkflowProcessContract.cs" />
+    <Compile Include="GeneralAffairModule\IPriavteAttachmentContract.cs" />
+    <Compile Include="GeneralAffairModule\IPrivateMailContract.cs" />
+    <Compile Include="ICommonUtilContract.cs" />
+    <Compile Include="IMutualChannelContract.cs" />
+    <Compile Include="IDuplexChannelContract.cs" />
+    <Compile Include="ISystemPrvoiderContract.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BusinessModule\ICustomDatabaseContract.cs" />
+    <Compile Include="BusinessModule\ICustomDataFieldContract.cs" />
+    <Compile Include="SystemModule\ICustomDepartmentContract.cs" />
+    <Compile Include="BusinessModule\ICustomExpressionContract.cs" />
+    <Compile Include="BusinessModule\ICustomTableContract.cs" />
+    <Compile Include="SystemModule\ISystemConfigContract.cs" />
+    <Compile Include="SystemModule\IUserLogContract.cs" />
+    <Compile Include="SystemModule\IUserMessageContract.cs" />
+    <Compile Include="SystemModule\IUserTypeContract.cs" />
+    <Compile Include="UserModule\IUserAccountContract.cs" />
+    <Compile Include="UserModule\IUserConfigContract.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Blue.WCFContracts.snk" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AppFramework.Core\AppFramework.Core.csproj">
+      <Project>{2b0ae85c-4142-42dc-b97e-5d5e9557a9e6}</Project>
+      <Name>AppFramework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppFramework.Reference\AppFramework.Reference.csproj">
+      <Project>{a903b873-5480-48a1-bca3-86f45c9640dc}</Project>
+      <Name>AppFramework.Reference</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blue.Model\Blue.Model.csproj">
+      <Project>{a49ec00a-f9bd-4f53-9a88-bed92d768003}</Project>
+      <Name>Blue.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

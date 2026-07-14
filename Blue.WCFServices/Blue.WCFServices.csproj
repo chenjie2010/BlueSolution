@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC6C0E15-F167-4D00-AD07-67B8ED3B24D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Blue.WCFServices</RootNamespace>
+    <AssemblyName>Blue.WCFServices</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Blue.WCFServices.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.3\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Abstractions, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Abstractions.5.11.1\lib\net47\Unity.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Unity.Configuration, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Configuration.5.11.1\lib\net47\Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Container.5.11.1\lib\net47\Unity.Container.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Unity.Interception, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Interception.5.11.1\lib\net47\Unity.Interception.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessDesignerModule\AppointmentBusinessService.cs" />
+    <Compile Include="BusinessDesignerModule\CustomCellService.cs" />
+    <Compile Include="BusinessDesignerModule\CustomSheetService.cs" />
+    <Compile Include="BusinessDesignerModule\CustomSnapshotService.cs" />
+    <Compile Include="BusinessDesignerModule\DataAuditingLogService.cs" />
+    <Compile Include="BusinessDesignerModule\DataAuditingService.cs" />
+    <Compile Include="BusinessDesignerModule\DataAuditingStepService.cs" />
+    <Compile Include="BusinessModule\AppointmentInstanceService.cs" />
+    <Compile Include="BusinessModule\AssociatedDataFieldService.cs" />
+    <Compile Include="BusinessModule\CombinedTableService.cs" />
+    <Compile Include="BusinessModule\CustomAssociationService.cs" />
+    <Compile Include="BusinessModule\CustomBusinessService.cs" />
+    <Compile Include="BusinessModule\CustomCategoryService.cs" />
+    <Compile Include="BusinessModule\CustomDataService.cs" />
+    <Compile Include="BusinessModule\CustomEnumService.cs" />
+    <Compile Include="BusinessModule\CustomDatabaseService.cs" />
+    <Compile Include="BusinessModule\CustomDataFieldService.cs" />
+    <Compile Include="BusinessModule\CustomFormService.cs" />
+    <Compile Include="BusinessModule\CustomGroupService.cs" />
+    <Compile Include="BusinessModule\CustomMenuService.cs" />
+    <Compile Include="BusinessModule\CustomPrintService.cs" />
+    <Compile Include="BusinessModule\CustomQueyService.cs" />
+    <Compile Include="BusinessDesignerModule\CustomReportService.cs" />
+    <Compile Include="BusinessModule\CustomSectionService.cs" />
+    <Compile Include="BusinessModule\DataBussinessService.cs" />
+    <Compile Include="BusinessModule\UserQueryService.cs" />
+    <Compile Include="BusinessModule\WorkflowInstanceStepService.cs" />
+    <Compile Include="DataConvertionModule\DataRelationService.cs" />
+    <Compile Include="DataConvertionModule\RemoteDataService.cs" />
+    <Compile Include="DataFilledModule\BusinessInstanceService.cs" />
+    <Compile Include="RemoteServerService.cs" />
+    <Compile Include="SystemModule\CustomInterfaceService.cs" />
+    <Compile Include="SystemModule\CustomRoleService.cs" />
+    <Compile Include="BusinessModule\CustomViewService.cs" />
+    <Compile Include="BusinessModule\CustomWorkflowInstanceService.cs" />
+    <Compile Include="BusinessModule\CustomWorkflowProcessService.cs" />
+    <Compile Include="BusinessModule\CustomWorkflowService.cs" />
+    <Compile Include="GeneralAffairModule\PriavteAttachmentService.cs" />
+    <Compile Include="GeneralAffairModule\PrivateMailService.cs" />
+    <Compile Include="SystemModule\CustomDepartmentService.cs" />
+    <Compile Include="BusinessModule\CustomExpressionService.cs" />
+    <Compile Include="BusinessModule\CustomTableService.cs" />
+    <Compile Include="SystemModule\SystemConfigService.cs" />
+    <Compile Include="SystemModule\UserLogService.cs" />
+    <Compile Include="SystemModule\UserMessageService.cs" />
+    <Compile Include="SystemModule\UserTypeService.cs" />
+    <Compile Include="SystemPrvoiderService.cs" />
+    <Compile Include="MutualChannelService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CommonUtilService.cs" />
+    <Compile Include="DuplexService.cs" />
+    <Compile Include="UserModule\UserAccountService.cs" />
+    <Compile Include="UserModule\UserConfigService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Blue.WCFServices.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppFramework.Core\AppFramework.Core.csproj">
+      <Project>{2b0ae85c-4142-42dc-b97e-5d5e9557a9e6}</Project>
+      <Name>AppFramework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppFramework.Reference\AppFramework.Reference.csproj">
+      <Project>{a903b873-5480-48a1-bca3-86f45c9640dc}</Project>
+      <Name>AppFramework.Reference</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blue.BusinessInterface\Blue.BusinessInterface.csproj">
+      <Project>{4a01b0ec-5b3b-4b1a-94d2-7543456dde8b}</Project>
+      <Name>Blue.BusinessInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blue.BusinessLogic\Blue.BusinessLogic.csproj">
+      <Project>{c83d0b6a-b78f-436d-8801-55d20a7373bb}</Project>
+      <Name>Blue.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blue.CustomLibrary\Blue.CustomLibrary.csproj">
+      <Project>{3c440cad-450c-4517-98cc-762a0084bc5a}</Project>
+      <Name>Blue.CustomLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blue.DataCommutation\Blue.DataCommutation.csproj">
+      <Project>{9438c392-7250-4d78-91a8-f11e1f9469e5}</Project>
+      <Name>Blue.DataCommutation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blue.IDAL\Blue.IDAL.csproj">
+      <Project>{7548bd25-b680-4ba5-bee6-4682746d1782}</Project>
+      <Name>Blue.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blue.Model\Blue.Model.csproj">
+      <Project>{a49ec00a-f9bd-4f53-9a88-bed92d768003}</Project>
+      <Name>Blue.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blue.SQLServerDAL\Blue.SQLServerDAL.csproj">
+      <Project>{43466b4d-2caa-4f8d-a7c8-d9cba7038f86}</Project>
+      <Name>Blue.SQLServerDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blue.WCFContracts\Blue.WCFContracts.csproj">
+      <Project>{2269095b-f5f9-4f05-b52d-ad7ddebb4cff}</Project>
+      <Name>Blue.WCFContracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

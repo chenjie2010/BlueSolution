@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A903B873-5480-48A1-BCA3-86F45C9640DC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppFramework.Reference</RootNamespace>
+    <AssemblyName>AppFramework.Reference</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>AppFrameworkReference.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonServiceLocator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.2.0.4\lib\net47\CommonServiceLocator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Enterprise Library 6\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Enterprise Library 6\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data.SqlCe">
+      <HintPath>C:\Program Files\Enterprise Library 6\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Enterprise Library 6\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Enterprise Library 6\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Enterprise Library 6\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging.Database">
+      <HintPath>C:\Program Files\Enterprise Library 6\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.PolicyInjection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Enterprise Library 6\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Enterprise Library 6\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Enterprise Library 6\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLibrary\CommonNodeBusiness.cs" />
+    <Compile Include="BusinessLibrary\CorrelatedTableBusiness.cs" />
+    <Compile Include="BusinessLibrary\IBLL\IBusinessBase.cs" />
+    <Compile Include="BusinessLibrary\IBLL\ICommonNodeBusiness.cs" />
+    <Compile Include="BusinessLibrary\IBLL\ICorrelatedBusiness.cs" />
+    <Compile Include="BusinessLibrary\IBLL\IDependentBusiness.cs" />
+    <Compile Include="BusinessLibrary\IBLL\IDualDependentBusiness.cs" />
+    <Compile Include="BusinessLibrary\IBLL\IPrincipalBusiness.cs" />
+    <Compile Include="CustomLibrary\AssemblyLocator.cs" />
+    <Compile Include="CustomLibrary\CustomCache\CustomCacheBase.cs" />
+    <Compile Include="CustomLibrary\CustomCache\CustomFileCache.cs" />
+    <Compile Include="CustomLibrary\CustomCache\CustomMemoryCache.cs" />
+    <Compile Include="CustomLibrary\CustomCryptography\CryptographyHelper.cs" />
+    <Compile Include="CustomLibrary\CustomCryptography\DESCryptography.cs" />
+    <Compile Include="CustomLibrary\CustomCryptography\ICryptography.cs" />
+    <Compile Include="CustomLibrary\DynamicObjCreater.cs" />
+    <Compile Include="CustomLibrary\DALObjectHelper.cs" />
+    <Compile Include="CustomLibrary\MailProcessor.cs" />
+    <Compile Include="CustomLibrary\ShowModeHelper.cs" />
+    <Compile Include="DataAccessLibrary\CommonNodeDataAccess.cs" />
+    <Compile Include="DataAccessLibrary\CorrelatedTableDataAcess.cs" />
+    <Compile Include="DataAccessLibrary\IDAL\ICommonNode.cs" />
+    <Compile Include="DataAccessLibrary\IDAL\ICorrelatedTable.cs" />
+    <Compile Include="DataAccessLibrary\IDAL\IDependentTable.cs" />
+    <Compile Include="DataAccessLibrary\IDAL\IDualDependentTable.cs" />
+    <Compile Include="DataAccessLibrary\IDAL\IPrincipalTable.cs" />
+    <Compile Include="DataAccessLibrary\IDAL\ITableBase.cs" />
+    <Compile Include="DataFieldLibrary\DataTableHelper.cs" />
+    <Compile Include="DataFieldLibrary\DataFieldHelper.cs" />
+    <Compile Include="DataFieldLibrary\QueryClauseConstructor.cs" />
+    <Compile Include="DataFieldLibrary\SystemTableHelper.cs" />
+    <Compile Include="EnterpriseLibrary\DataSettingHelper.cs" />
+    <Compile Include="MembershipProvider\IUserNamePasswordValidator.cs" />
+    <Compile Include="MembershipProvider\UserMembership.cs" />
+    <Compile Include="EnterpriseLibrary\AppSettingHelper.cs" />
+    <Compile Include="CustomLibrary\DataAccessHandler.cs" />
+    <Compile Include="EnterpriseLibrary\DataAccessHelper.cs" />
+    <Compile Include="EnterpriseLibrary\ExceptionHelper.cs" />
+    <Compile Include="EnterpriseLibrary\Utility\ConfigFileOperation.cs" />
+    <Compile Include="EnterpriseLibrary\LoggingHelper.cs" />
+    <Compile Include="EnterpriseLibrary\Utility\InvalidRequestException.cs" />
+    <Compile Include="EnterpriseLibrary\Utility\ReplaceException.cs" />
+    <Compile Include="EnterpriseLibrary\Utility\WrapException.cs" />
+    <Compile Include="EnterpriseLibrary\ValidationHelper.cs" />
+    <Compile Include="Oracle\OracleHelper.cs" />
+    <Compile Include="Oracle\CachingMechanism.cs" />
+    <Compile Include="Oracle\OracleDatabase.cs" />
+    <Compile Include="Oracle\DatabaseConnectionWrapper.cs" />
+    <Compile Include="Oracle\ParameterCache.cs" />
+    <Compile Include="Oracle\TransactionScopeConnections.cs" />
+    <Compile Include="Oracle\UpdateBehavior.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\Platform.cs" />
+    <Compile Include="WCFLibrary\Channel\ChannelFactoryCreator.cs" />
+    <Compile Include="WCFLibrary\Channel\Copy\ServiceInvoker.cs" />
+    <Compile Include="WCFLibrary\Channel\ServiceProxyFactory.cs" />
+    <Compile Include="WCFLibrary\Channel\ServiceRealProxy.cs" />
+    <Compile Include="WCFLibrary\Duplex\DuplexSystemCallBackHandler.cs" />
+    <Compile Include="WCFLibrary\Duplex\IDuplexChannelCallBackContract.cs" />
+    <Compile Include="WCFLibrary\Duplex\IMutualChannelCallBackContract.cs" />
+    <Compile Include="WCFLibrary\Duplex\MutualSystemCallBackHandler.cs" />
+    <Compile Include="WCFLibrary\IContracts\ICommonNodeContract.cs" />
+    <Compile Include="WCFLibrary\IContracts\IContractsBase.cs" />
+    <Compile Include="WCFLibrary\IContracts\ICorrelatedContracts.cs" />
+    <Compile Include="WCFLibrary\IContracts\IDependentContracts.cs" />
+    <Compile Include="WCFLibrary\IContracts\IDualDependentContract.cs" />
+    <Compile Include="WCFLibrary\IContracts\IPrincipalContracts.cs" />
+    <Compile Include="WCFLibrary\Security\X509Security.cs" />
+    <Compile Include="WCFLibrary\Services\CommonNodeServices.cs" />
+    <Compile Include="WCFLibrary\Services\ExternalXmlFiles\ConfiguredService.cs" />
+    <Compile Include="WCFLibrary\Services\ExternalXmlFiles\ConfiguredServices.cs" />
+    <Compile Include="WCFLibrary\Services\ExternalXmlFiles\ServiceHostBase.cs" />
+    <Compile Include="WCFLibrary\Services\ServiceHostGroup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EnterpriseLibrary\SystemConfigFiles\Exception.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WCFLibrary\Security\Blue_WCF_Server.pfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WCFLibrary\Services\ExternalXmlFiles\Services.xml" />
+    <None Include="app.config" />
+    <None Include="AppFrameworkReference.snk" />
+    <Content Include="EnterpriseLibrary\SystemConfigFiles\Log.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomLibrary\CustomCryptography\SystemKey.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EnterpriseLibrary\SystemConfigFiles\PolicyInjection.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EnterpriseLibrary\SystemConfigFiles\Validation.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EnterpriseLibrary\SystemConfigFiles\Exception.log">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EnterpriseLibrary\SystemConfigFiles\Log.log">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppFramework.Core\AppFramework.Core.csproj">
+      <Project>{2b0ae85c-4142-42dc-b97e-5d5e9557a9e6}</Project>
+      <Name>AppFramework.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
