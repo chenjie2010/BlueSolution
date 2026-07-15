@@ -7,7 +7,7 @@
 2. 基础框架：.Net Framework 4.8
    
 3. 依赖的第三库：
-4. 
+   
 (1)	Microsoft EnterpriseLibrary 6.0
 
 (2)	DevExpressComponents-16.1.4
