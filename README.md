@@ -7,32 +7,43 @@
 2. 基础框架：.Net Framework 4.8
    
 3. 依赖的第三库：
+4. 
 (1)	Microsoft EnterpriseLibrary 6.0
+
 (2)	DevExpressComponents-16.1.4
+
 (3)	SpreadforWinv8.2
 
-4.	支持数据库：SQL Server 2008 R2
+6.	支持数据库：SQL Server 2008 R2
 
 二、数据库SQL文件下载地址：
 
+
 （1）https://www.jiechen.site/downloads/SQL/Blue.sql
+
  (2) https://www.jiechen.site/downloads/SQL/Blue_1-5.sql
 
 三、安装说明
 
 1. 客户端要求
+   
 （1） Windows 7 SP1 及以上版本
+
 （2）.Net Framework 4.8（只需要安装一次）
 
-2. 客户端安装步骤:
+3. 客户端安装步骤:
+   
 （1） 安装.Net Framework 4.8 （只需要安装一次）
+
 （2） 安装客户端软件
 
-3. 服务器端要求
+4. 服务器端要求
+   
 （1） Windows Sever 2012 及以上版本
+
 （2）.Net Framework 4.8（只需要安装一次）
 
-4. 服务器端安装步骤
+5. 服务器端安装步骤
    
 （1）安装.Net Framework 4.8（只需要安装一次）
 
