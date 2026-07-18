@@ -62,7 +62,7 @@
 
 四、使用手册下载
 
-(1)
+(1) https://github.com/chenjie2010/BlueSolution/blob/master/%E7%B3%BB%E7%BB%9F%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf
 
 五、其他未尽事宜
 
